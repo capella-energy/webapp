@@ -6,7 +6,7 @@ import { SidebarData } from './SidebarData';
 import "../assets/Navbar.css";
 import { IconContext } from "react-icons"; 
 
-require("typeface-montserrat");
+
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false); 
@@ -20,6 +20,7 @@ function Navbar() {
         <Link to="#" className="bars">
           <FaIcons.FaBars onClick={showSidebar}/>
         </Link>
+      
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
         <ul className="nav-menu-items" onClick={showSidebar}>

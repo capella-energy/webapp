@@ -12,8 +12,6 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
 
-  require("typeface-montserrat");
-
   async function handleSubmit(e) {
     e.preventDefault();
 

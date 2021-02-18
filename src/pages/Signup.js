@@ -13,8 +13,6 @@ export default function Signup() {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
 
-  require("typeface-montserrat");
-
   async function handleSubmit(e) {
     e.preventDefault();
 

@@ -5,7 +5,7 @@ export default function Dashboard() {
   return (
     <div>
       <Navbar />
-      <h1>Dashboard</h1>
+      <h1>Marketplace</h1>
     </div>
   );
 }

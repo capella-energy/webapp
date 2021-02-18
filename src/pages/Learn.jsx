@@ -8,7 +8,7 @@ class Learn extends Component {
         return ( 
             <div>
                 <Navbar />
-                <h1></h1>
+                <h1>Learn</h1>
             </div>
             
          );

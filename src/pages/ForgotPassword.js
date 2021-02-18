@@ -11,7 +11,6 @@ export default function ForgotPassword() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  require("typeface-montserrat");
   async function handleSubmit(e) {
     e.preventDefault();
 
