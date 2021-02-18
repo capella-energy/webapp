@@ -1,28 +1,35 @@
-import React from "react"
-import Signup from "./pages/Signup"
-import { Container } from "react-bootstrap"
-import { AuthProvider } from "./contexts/AuthContext"
-import { HashRouter, Switch, Route } from "react-router-dom"
-import Dashboard from "./pages/Dashboard"
-import Login from "./pages/Login"
-import PrivateRoute from "./PrivateRoute"
-import ForgotPassword from "./pages/ForgotPassword"
-import UpdateProfile from "./pages/UpdateProfile"
+import React from "react";
+import Signup from "./pages/Signup";
+import { AuthProvider } from "./contexts/AuthContext";
+import { HashRouter, Switch, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import Dashboard from "./pages/Dashboard";
+import Login from "./pages/Login";
+import PrivateRoute from "./PrivateRoute";
+import ForgotPassword from "./pages/ForgotPassword";
+import UpdateProfile from "./pages/UpdateProfile";
+import Learn from "./pages/Learn";
 
 function Nav() {
   return (
-        <HashRouter>
-          <AuthProvider>
-            <Switch>
-              <PrivateRoute exact path="/" component={Dashboard} />
-              <PrivateRoute path="/update-profile" component={UpdateProfile} />
+    <HashRouter>
+      <AuthProvider>
+        <Switch>
+          <PrivateRoute exact path="/" component={Dashboard} />
+          <PrivateRoute path="/learn" component={Learn} />
+          <PrivateRoute path="/update-profile" component={UpdateProfile} />
+
+          <Container className="login-container">
+            <div className="inner-container">
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
-            </Switch>
-          </AuthProvider>
-        </HashRouter>
-  )
+            </div>
+          </Container>
+        </Switch>
+      </AuthProvider>
+    </HashRouter>
+  );
 }
 
-export default App
+export default Nav;

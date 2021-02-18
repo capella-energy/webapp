@@ -1,0 +1,79 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+  z-index: 0;
+}
+
+.login-container::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url("./bg22.jpg");
+
+  width: 100%;
+  height: 100%;
+}
+
+.inner-container {
+  min-width: 350px;
+}
+
+.card {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.form-control {
+  border-radius: 30px !important;
+  background-color: rgba(255, 255, 255, 0.24) !important;
+  border: 0 !important;
+  padding: 1.25rem 0.75rem !important;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.363) !important;
+}
+
+input,
+::placeholder {
+  color: white !important;
+  font-family: "Montserrat" !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+
+::placeholder {
+  color: rgb(226, 226, 226) !important;
+}
+
+.links {
+  color: #e89c35 !important;
+  font-family: "Montserrat" !important;
+  font-weight: 500;
+}
+
+.btn-primary {
+  border-radius: 30px !important;
+  background-color: #e89c35 !important;
+  padding: 0.49rem 0.75rem !important;
+  border: 0 !important;
+  color: white !important;
+  font-family: "Montserrat" !important;
+  font-size: 0.8571em;
+  font-weight: 400 !important;
+}
+
+.btn-primary:hover {
+  background-color: #f0aa49 !important;
+}
+.text-center {
+  color: white !important;
+  font-family: "Montserrat" !important;
+}

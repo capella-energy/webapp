@@ -1,18 +1,8 @@
-import Nav from './nav'
-import { Container } from "react-bootstrap"
-
+import Nav from "./nav";
+import "./assets/App.css";
 
 function App() {
-  return (
-    <Container
-      className="d-flex align-items-center justify-content-center"
-      style={{ minHeight: "100vh" }}
-    >
-      <div className="w-100" style={{ maxWidth: "400px" }}>
-        <Nav/>
-      </div>
-    </Container>
-  )
+  return <Nav />;
 }
 
-export default App
+export default App;
