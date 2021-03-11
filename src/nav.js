@@ -10,7 +10,6 @@ import PrivateRoute from "./PrivateRoute";
 import ForgotPassword from "./pages/ForgotPassword";
 import UpdateProfile from "./pages/UpdateProfile";
 import Learn from "./pages/Learn";
-import MapSection from "./pages/Marketplace";
 
 function Nav() {
   return (
