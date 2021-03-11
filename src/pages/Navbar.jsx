@@ -4,7 +4,6 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { SidebarData } from './SidebarData';
 import "../assets/Navbar.css";
-import { IconContext } from "react-icons"; 
 
 
 
@@ -15,16 +14,17 @@ function Navbar() {
 
   return (
     <>
-    <IconContext.Provider value={{color: "#fff"}}>
       <div className="navbar">
-        <Link to="#" className="bars">
+        <Link to="#" className="bars closeNav">
           <FaIcons.FaBars onClick={showSidebar}/>
         </Link>
-      
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+    
         <ul className="nav-menu-items" onClick={showSidebar}>
+          
           <li className="navbar-toggle">
+       
             <Link to="#" className="bars">
               <AiIcons.AiOutlineClose />
             </Link>
@@ -41,7 +41,7 @@ function Navbar() {
           })}
         </ul>
       </nav>
-    </IconContext.Provider>
+    
     </>
   )
 }

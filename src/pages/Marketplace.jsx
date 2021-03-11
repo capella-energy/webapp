@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+import MapSection from "./Map"; 
 
-export default function Dashboard() {
-  return (
-    <div>
-      <Navbar />
-      <h1>Marketplace</h1>
-    </div>
-  );
-}
+const location = {
+  address: "Capella Headquarters",
+  lat: 40.662,
+  lng: -74.10427,
+};
+
+const Marketplace = () => (
+  <div className="Marketplace">
+    <MapSection location={location} zoomLevel={15} />
+  </div>
+)
+
+export default Marketplace;

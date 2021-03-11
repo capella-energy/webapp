@@ -1,0 +1,7 @@
+.image-holder {
+  background-color: blue;
+  height: 225px;
+  background-image: url("./bg33.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

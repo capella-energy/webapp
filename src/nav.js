@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import ForgotPassword from "./pages/ForgotPassword";
 import UpdateProfile from "./pages/UpdateProfile";
 import Learn from "./pages/Learn";
+import MapSection from "./pages/Marketplace";
 
 function Nav() {
   return (
@@ -19,6 +20,7 @@ function Nav() {
           <PrivateRoute exact path="/" component={Dashboard} />
           <PrivateRoute path="/learn" component={Learn} />
           <PrivateRoute path="/marketplace" component={Marketplace} />
+          <PrivateRoute path="/update-profile" component={UpdateProfile} />
           <PrivateRoute path="/update-profile" component={UpdateProfile} />
 
           <Container className="login-container">
