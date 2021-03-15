@@ -17,7 +17,6 @@ const LocationPin = ({ text }) => (
 
 const MapSection = ({ location, zoomLevel }) => (
   <div className="map">
-    <h1>Find Solar Projects Nearby</h1>
     <div className="google-map">
       <GoogleMapReact
         bootstrapURLKeys={{ key: API_KEY }}

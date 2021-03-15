@@ -18,15 +18,17 @@ function Navbar() {
         <Link to="#" className="bars closeNav">
           <FaIcons.FaBars onClick={showSidebar}/>
         </Link>
+        <AiIcons.AiFillCloud />
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
     
         <ul className="nav-menu-items" onClick={showSidebar}>
           
           <li className="navbar-toggle">
-       
+          <h1 className="nav-logo">Capella</h1>
             <Link to="#" className="bars">
-              <AiIcons.AiOutlineClose />
+              
+              <AiIcons.AiOutlineClose/>
             </Link>
           </li>
           {SidebarData.map((item, index) => {

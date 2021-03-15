@@ -11,6 +11,7 @@ const location = {
 const Marketplace = () => (
   <div className="Marketplace">
     <Navbar />
+    <h1 className="section-titles">Find Solar Projects Nearby</h1>
     <MapSection location={location} zoomLevel={15} />
   </div>
 )

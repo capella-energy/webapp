@@ -5,7 +5,7 @@ export default function Dashboard() {
   return (
     <div>
       <Navbar />
-      <h1>Dashboard</h1>
+      <h1 className="section-titles">Welcome, Hans</h1>
     </div>
   );
 }
