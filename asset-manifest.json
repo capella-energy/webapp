@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/webapp/static/css/main.8e87faaf.chunk.css",
-    "main.js": "/webapp/static/js/main.66ea6bf5.chunk.js",
-    "main.js.map": "/webapp/static/js/main.66ea6bf5.chunk.js.map",
+    "main.css": "/webapp/static/css/main.e3da47e9.chunk.css",
+    "main.js": "/webapp/static/js/main.4d1fe9e7.chunk.js",
+    "main.js.map": "/webapp/static/js/main.4d1fe9e7.chunk.js.map",
     "runtime-main.js": "/webapp/static/js/runtime-main.183fcf9c.js",
     "runtime-main.js.map": "/webapp/static/js/runtime-main.183fcf9c.js.map",
     "static/css/2.1a02f21c.chunk.css": "/webapp/static/css/2.1a02f21c.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.de02f65b.chunk.js.map": "/webapp/static/js/2.de02f65b.chunk.js.map",
     "index.html": "/webapp/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/webapp/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.8e87faaf.chunk.css.map": "/webapp/static/css/main.8e87faaf.chunk.css.map",
+    "static/css/main.e3da47e9.chunk.css.map": "/webapp/static/css/main.e3da47e9.chunk.css.map",
     "static/js/2.de02f65b.chunk.js.LICENSE.txt": "/webapp/static/js/2.de02f65b.chunk.js.LICENSE.txt",
     "static/media/login.css": "/webapp/static/media/bg22.1529c4bc.jpg",
     "static/media/solarimage1.7c05741a.webp": "/webapp/static/media/solarimage1.7c05741a.webp",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.183fcf9c.js",
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.de02f65b.chunk.js",
-    "static/css/main.8e87faaf.chunk.css",
-    "static/js/main.66ea6bf5.chunk.js"
+    "static/css/main.e3da47e9.chunk.css",
+    "static/js/main.4d1fe9e7.chunk.js"
   ]
 }
