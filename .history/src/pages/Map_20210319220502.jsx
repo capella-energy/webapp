@@ -76,10 +76,10 @@ export default function Map() {
       >
         {projectData.projects.map(project => (
           <Marker 
-            key={project.properties.PROJECT_ID} 
+            key={"Capella HQ"} 
             position={{
-              lat: project.geometry.coordinates[1],
-              lng: project.geometry.coordinates[0]
+              lat: 40,
+              lng: -74
             }}
           /> 
         ))}

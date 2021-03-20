@@ -76,13 +76,28 @@ export default function Map() {
       >
         {projectData.projects.map(project => (
           <Marker 
-            key={project.properties.PROJECT_ID} 
+            key={project.ID} 
             position={{
-              lat: project.geometry.coordinates[1],
-              lng: project.geometry.coordinates[0]
+              lat: project.lat,
+              lng: project.lng
             }}
           /> 
         ))}
+
+        /*{selected ? (
+          <InfoWindow
+            position={{ lat: selected.lat, lng: selected.lng }}
+            onCloseClick={() => {
+              setSelected(null);
+            }}
+          >
+            <div>
+              <h2>
+                Project
+              </h2>
+            </div>
+          </InfoWindow>
+        ) : null} */
       </GoogleMap>
     </div>
   );
@@ -104,7 +119,7 @@ function Locate({ panTo }) {
         );
       }}
     >
-      <img src="../assets/userlocation" alt="user-location" />
+      <img src="/compass.svg" alt="compass" />
     </button>
   );
 }

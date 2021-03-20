@@ -12,13 +12,7 @@ import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,
 } from "use-places-autocomplete";
-import {
-  Combobox,
-  ComboboxInput,
-  ComboboxPopover,
-  ComboboxList,
-  ComboboxOption,
-} from "@reach/combobox";
+import { formatRelative } from "date-fns";
 
 const API_KEY = process.env.REACT_APP_APIKEY;
 const libraries = ["places"];
@@ -32,8 +26,8 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: 40.62,
-  lng: -74.14435,
+  lat: 43.6532,
+  lng: -79.3832,
 };
 
 export default function Map() {
@@ -69,20 +63,39 @@ export default function Map() {
       <GoogleMap
         id="map"
         mapContainerStyle={mapContainerStyle}
-        zoom={15}
+        zoom={8}
         center={center}
         options={options}
         onLoad={onMapLoad}
       >
         {projectData.projects.map(project => (
           <Marker 
-            key={project.properties.PROJECT_ID} 
+            key={project.ID} 
             position={{
-              lat: project.geometry.coordinates[1],
-              lng: project.geometry.coordinates[0]
+              lat: project.lat,
+              lng: project.lng
             }}
           /> 
         ))}
+
+        {selected ? (
+          <InfoWindow
+            position={{ lat: selected.lat, lng: selected.lng }}
+            onCloseClick={() => {
+              setSelected(null);
+            }}
+          >
+            <div>
+              <h2>
+                <span role="img" aria-label="bear">
+                  🐻
+                </span>{" "}
+                Alert
+              </h2>
+              <p>Spotted {formatRelative(selected.time, new Date())}</p>
+            </div>
+          </InfoWindow>
+        ) : null}
       </GoogleMap>
     </div>
   );
@@ -104,7 +117,7 @@ function Locate({ panTo }) {
         );
       }}
     >
-      <img src="../assets/userlocation" alt="user-location" />
+      <img src="/compass.svg" alt="compass" />
     </button>
   );
 }

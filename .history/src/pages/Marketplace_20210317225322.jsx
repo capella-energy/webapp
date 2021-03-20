@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Map from "./Map"; 
+import MapSection from "./Map"; 
 import Navbar from "./Navbar";
 
 const location = {
@@ -11,20 +11,9 @@ const location = {
 const Marketplace = () => (
   <div className="Marketplace">
     <Navbar />
-    <Map />
+    <h1 className="section-titles">Find Solar Projects Nearby</h1>
+    <MapSection location={location} zoomLevel={15} />
   </div>
 )
 
 export default Marketplace;
-
-/*
-{projectData.projects.map(project => (
-    <Marker 
-    key={project.ID} 
-    position={{
-      lat: project.lat,
-      lng: project.lng
-    }}
-    /> 
-))}
-*/

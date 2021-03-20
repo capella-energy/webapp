@@ -16,15 +16,3 @@ const Marketplace = () => (
 )
 
 export default Marketplace;
-
-/*
-{projectData.projects.map(project => (
-    <Marker 
-    key={project.ID} 
-    position={{
-      lat: project.lat,
-      lng: project.lng
-    }}
-    /> 
-))}
-*/

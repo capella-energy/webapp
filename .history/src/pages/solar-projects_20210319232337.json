@@ -1,0 +1,457 @@
+{
+    "type": "ProjectCollection",
+    "crs": {
+      "type": "name",
+      "properties": { "name": "Capella.Database" }
+    },
+    "projects": [
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 1,
+          "NAME": "",
+          "NAME_FR": "",
+          "ADDRESS": "",
+          "ADDRESS_FR": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.3372987731628, 40.383321536272049]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 2,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-76.292790, 40.049880]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 3,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.3372987731628, 41.383321536272049]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 4,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.468561642270757, 39.23032561834377]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 5,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.926651366520872, 40.260659774950561]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 6,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.760933332842754, 40.345566668964558]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 7,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.625996131485707, 40.375401587496128]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 8,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.857009812435976, 40.290758029776626]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 9,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-76.206087708136721, 40.470459866077654]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 10,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.760235255689508, 40.280622216516925]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 11,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.60118478829267, 40.147641950106689]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 12,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.703622500360268, 40.408488357092367]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 13,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.609516309730921, 40.314086718258636]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 14,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.562796920677627, 40.429643413219814]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 15,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.907108695123526, 40.26222860981953]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 16,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-76.09244957349965, 40.499050061534312]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 17,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.695392300925718, 40.315355581248873]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 18,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.601158413850058, 40.436441777242031]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 19,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.681193500335723, 40.400372622455215]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 20,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.553065849890629, 40.265433081236672]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 21,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.686746214582783, 40.22266136322127]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 22,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.556978502821494, 40.261353985880973]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 23,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.747348794023239, 40.275696004260205]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 24,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.632030968141081, 40.450696284941976]
+        }
+      },
+
+
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 25,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.471003922143311, 40.450391044010431]
+        }
+      },
+
+      
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 26,
+          "NAME": "",
+          "ADDRESS": "",
+          "OPEN": null,
+          "NOTES": "",
+          "CREATED_DA": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.931122879767898, 40.34125624499935]
+        }
+      }
+
+
+
+
+    ]
+  }

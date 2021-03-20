@@ -12,13 +12,7 @@ import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,
 } from "use-places-autocomplete";
-import {
-  Combobox,
-  ComboboxInput,
-  ComboboxPopover,
-  ComboboxList,
-  ComboboxOption,
-} from "@reach/combobox";
+import { formatRelative } from "date-fns";
 
 const API_KEY = process.env.REACT_APP_APIKEY;
 const libraries = ["places"];
@@ -32,8 +26,8 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: 40.62,
-  lng: -74.14435,
+  lat: 43.6532,
+  lng: -79.3832,
 };
 
 export default function Map() {
@@ -43,6 +37,17 @@ export default function Map() {
   });
   const [markers, setMarkers] = React.useState([]);
   const [selected, setSelected] = React.useState(null);
+
+  const onMapClick = React.useCallback((e) => {
+    setMarkers((current) => [
+      ...current,
+      {
+        lat: e.latLng.lat(),
+        lng: e.latLng.lng(),
+        time: new Date(),
+      },
+    ]);
+  }, []);
 
   const mapRef = React.useRef();
   const onMapLoad = React.useCallback((map) => {
@@ -69,20 +74,45 @@ export default function Map() {
       <GoogleMap
         id="map"
         mapContainerStyle={mapContainerStyle}
-        zoom={15}
+        zoom={8}
         center={center}
         options={options}
         onLoad={onMapLoad}
       >
-        {projectData.projects.map(project => (
-          <Marker 
-            key={project.properties.PROJECT_ID} 
-            position={{
-              lat: project.geometry.coordinates[1],
-              lng: project.geometry.coordinates[0]
+        {markers.map((marker) => (
+          <Marker
+            key={`${marker.lat}-${marker.lng}`}
+            position={{ lat: marker.lat, lng: marker.lng }}
+            onClick={() => {
+              setSelected(marker);
             }}
-          /> 
+            icon={{
+              url: `/bear.svg`,
+              origin: new window.google.maps.Point(0, 0),
+              anchor: new window.google.maps.Point(15, 15),
+              scaledSize: new window.google.maps.Size(30, 30),
+            }}
+          />
         ))}
+
+        {selected ? (
+          <InfoWindow
+            position={{ lat: selected.lat, lng: selected.lng }}
+            onCloseClick={() => {
+              setSelected(null);
+            }}
+          >
+            <div>
+              <h2>
+                <span role="img" aria-label="bear">
+                  🐻
+                </span>{" "}
+                Alert
+              </h2>
+              <p>Spotted {formatRelative(selected.time, new Date())}</p>
+            </div>
+          </InfoWindow>
+        ) : null}
       </GoogleMap>
     </div>
   );
@@ -104,7 +134,7 @@ function Locate({ panTo }) {
         );
       }}
     >
-      <img src="../assets/userlocation" alt="user-location" />
+      <img src="/compass.svg" alt="compass" />
     </button>
   );
 }

@@ -76,10 +76,10 @@ export default function Map() {
       >
         {projectData.projects.map(project => (
           <Marker 
-            key={project.properties.PROJECT_ID} 
+            key={project.properties.ID} 
             position={{
-              lat: project.geometry.coordinates[1],
-              lng: project.geometry.coordinates[0]
+              lat: project.properties.lat.value,
+              lng: project.properties.lng.value
             }}
           /> 
         ))}
@@ -104,7 +104,7 @@ function Locate({ panTo }) {
         );
       }}
     >
-      <img src="../assets/userlocation" alt="user-location" />
+      <img src="/compass.svg" alt="compass" />
     </button>
   );
 }

@@ -1,0 +1,19 @@
+{
+    "projects": [
+      {
+
+
+        "Capella_HQ": {
+            "ADDRESS": "Sex Street", 
+            "coordinates": [-74.1602, 40.662]  
+        },
+
+        "Example": {
+            "ADDRESS": "Example", 
+            "coordinates": [-73.2344569, 42.069]
+        }
+        
+
+      } 
+    ]
+}
