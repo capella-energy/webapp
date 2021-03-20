@@ -58,11 +58,11 @@ export default function Map() {
   return (
     <div>
       <h1>
-        Find Solar Projects Nearby! 
+        Find Solar Project Nearby! 
       </h1>
 
-
       <Locate panTo={panTo} />
+      <Search panTo={panTo} />
 
       <GoogleMap
         id="map"

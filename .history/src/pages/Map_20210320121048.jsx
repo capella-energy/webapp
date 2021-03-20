@@ -47,10 +47,12 @@ export default function Map() {
     mapRef.current = map;
   }, []);
 
+  /*
   const panTo = React.useCallback(({ lat, lng }) => {
     mapRef.current.panTo({ lat, lng });
     mapRef.current.setZoom(14);
   }, []);
+  */
 
   if (loadError) return "Error";
   if (!isLoaded) return "Loading...";
@@ -61,8 +63,8 @@ export default function Map() {
         Find Solar Projects Nearby! 
       </h1>
 
-
       <Locate panTo={panTo} />
+      <Search panTo={panTo} />
 
       <GoogleMap
         id="map"
