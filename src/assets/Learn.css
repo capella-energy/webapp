@@ -5,39 +5,21 @@
   transform: translate(-50%, -50%);
   color: white;
   font-weight: 800;
+  font-size: 18px;
   text-align: center;
+  text-shadow: 1px 1px #00000080;
 }
 
-.image-holder img {
+.gallery-card img {
   height: 225px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-}
-
-.card {
-  margin-bottom: 20px;
-}
-
-.col {
-  background-color: transparent;
-}
-
-.image-holder {
-  background-color: #01203a;
   border-radius: 10px;
+  margin-bottom: 25px;
 }
 
-img {
-  opacity: 75%;
-  border-radius: 10px;
-}
-
-.card:hover {
-  filter: drop-shadow(0px 0px 4px #000000);
-}
-
-.container {
-  margin: 15px 0 15px 0;
+.gallery-card:hover {
+  filter: drop-shadow(0px 0px 2px #01203a);
 }

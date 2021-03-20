@@ -57,9 +57,7 @@ export default function Map() {
 
   return (
     <div>
-      <h1>
-        Find Solar Projects Nearby! 
-      </h1>
+      
 
 
       <Locate panTo={panTo} />
