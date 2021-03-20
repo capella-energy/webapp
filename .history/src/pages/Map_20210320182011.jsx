@@ -36,6 +36,7 @@ const center = {
   lat: 40.62,
   lng: -74.14435,
 };
+const markerIcon = <FaIcons.FaMapMarkerAlt />; 
 
 export default function Map() {
   const { isLoaded, loadError } = useLoadScript({
@@ -73,6 +74,7 @@ export default function Map() {
       >
         {projectData.projects.map(project => (
           <Marker 
+            icon = {markerIcon}
             key={project.properties.PROJECT_ID} 
             position={{
               lat: project.geometry.coordinates[1],

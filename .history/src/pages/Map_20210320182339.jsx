@@ -73,6 +73,7 @@ export default function Map() {
       >
         {projectData.projects.map(project => (
           <Marker 
+            icon = {markerIcon}
             key={project.properties.PROJECT_ID} 
             position={{
               lat: project.geometry.coordinates[1],

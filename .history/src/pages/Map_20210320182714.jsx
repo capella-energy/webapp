@@ -72,7 +72,7 @@ export default function Map() {
         onLoad={onMapLoad}
       >
         {projectData.projects.map(project => (
-          <Marker 
+          <FaIcons.FaMapMarkerAlt 
             key={project.properties.PROJECT_ID} 
             position={{
               lat: project.geometry.coordinates[1],
