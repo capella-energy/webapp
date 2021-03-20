@@ -19,8 +19,9 @@ import {
   ComboboxList,
   ComboboxOption,
 } from "@reach/combobox";
+import { render } from "@testing-library/react";
 
-const API_KEY = "AIzaSyBawcqAK6VVEhjill05YASslrt9wDoMXppg"; //Idc
+const API_KEY = "AIzaSyCYtOMyY2cyh4RFwtoDtQmXLjWCbfIMx3c"; //Idc
 const libraries = ["places"];
 const mapContainerStyle = {
   height: "80vh",
@@ -54,7 +55,7 @@ export default function Map() {
 
   if (loadError) return "Error";
   if (!isLoaded) return "Loading...";
-
+render() {
   return (
     <div>
       <h1>
@@ -84,6 +85,7 @@ export default function Map() {
       </GoogleMap>
     </div>
   );
+ }
 }
 
 function Locate({ panTo }) {

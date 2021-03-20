@@ -20,7 +20,7 @@ import {
   ComboboxOption,
 } from "@reach/combobox";
 
-const API_KEY = "AIzaSyBawcqAK6VVEhjill05YASslrt9wDoMXppg"; //Idc
+const API_KEY = "AIzaSyCYtOMyY2cyh4RFwtoDtQmXLjWCbfIMx3c"; //Idc
 const libraries = ["places"];
 const mapContainerStyle = {
   height: "80vh",
