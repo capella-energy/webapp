@@ -100,7 +100,8 @@ function Locate({ panTo }) {
           () => null
         );
       }}
-    ><img src="../assets/userlocation.png" />
+    >
+      <img src="../assets/userlocation.png" alt="user-location" />
     </button>
   );
 }

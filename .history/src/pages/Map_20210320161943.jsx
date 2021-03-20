@@ -19,7 +19,6 @@ import {
   ComboboxList,
   ComboboxOption,
 } from "@reach/combobox";
-import "../assets/userlocation.png"; 
 
 const API_KEY = "AIzaSyCYtOMyY2cyh4RFwtoDtQmXLjWCbfIMx3c"; 
 const libraries = ["places"];
@@ -100,7 +99,8 @@ function Locate({ panTo }) {
           () => null
         );
       }}
-    ><img src="../assets/userlocation.png" />
+    >
+      <img src="../assets/userlocation" alt="user-location" />
     </button>
   );
 }
