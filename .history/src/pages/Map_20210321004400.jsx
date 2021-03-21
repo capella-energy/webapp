@@ -79,10 +79,10 @@ export default function Map() {
               lng: project.geometry.coordinates[0]
             }}
             icon={{
-              url: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png", 
-              scaledSize: new window.google.maps.Size(35, 35)
+              url: "https://img.icons8.com/color/48/000000/marker--v1.png", 
+              scaledSize: new window.google.maps.Size(30, 40) 
             }}
-          />  
+          /> 
         ))}
       </GoogleMap>
     </div>
@@ -92,7 +92,6 @@ export default function Map() {
 function Locate({ panTo }) {
   return (
     <button
-      id= "user-location-button"
       className="locate"
       onClick={() => {
         navigator.geolocation.getCurrentPosition(

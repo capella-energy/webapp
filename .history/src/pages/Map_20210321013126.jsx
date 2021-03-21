@@ -80,7 +80,7 @@ export default function Map() {
             }}
             icon={{
               url: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png", 
-              scaledSize: new window.google.maps.Size(35, 35)
+              scaledSize: new window.google.maps.Size(40, 40)
             }}
           />  
         ))}
@@ -92,7 +92,6 @@ export default function Map() {
 function Locate({ panTo }) {
   return (
     <button
-      id= "user-location-button"
       className="locate"
       onClick={() => {
         navigator.geolocation.getCurrentPosition(

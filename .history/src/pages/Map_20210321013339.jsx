@@ -92,7 +92,6 @@ export default function Map() {
 function Locate({ panTo }) {
   return (
     <button
-      id= "user-location-button"
       className="locate"
       onClick={() => {
         navigator.geolocation.getCurrentPosition(

@@ -28,8 +28,7 @@
 
 .user-location-button {
   align-items: right;
-  display: flex;
-  z-index: 4;
+  width: 180px;
 }
 
 @media screen and (min-width: 799px) {

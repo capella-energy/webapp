@@ -19,7 +19,7 @@ import {
   ComboboxList,
   ComboboxOption,
 } from "@reach/combobox";
-import * as FaIcons from "react-icons/fa";   
+import * as FaIcons from "react-icons/fa";
 
 const API_KEY = "AIzaSyCYtOMyY2cyh4RFwtoDtQmXLjWCbfIMx3c"; 
 const libraries = ["places"];
@@ -79,10 +79,10 @@ export default function Map() {
               lng: project.geometry.coordinates[0]
             }}
             icon={{
-              url: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png", 
-              scaledSize: new window.google.maps.Size(35, 35)
+              url: FaIcons.FaMapMarkerAlt, 
+              scaledSize: new window.google.maps.Size(25, 25) 
             }}
-          />  
+          /> 
         ))}
       </GoogleMap>
     </div>
@@ -92,7 +92,6 @@ export default function Map() {
 function Locate({ panTo }) {
   return (
     <button
-      id= "user-location-button"
       className="locate"
       onClick={() => {
         navigator.geolocation.getCurrentPosition(
