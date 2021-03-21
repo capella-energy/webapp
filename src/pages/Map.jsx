@@ -42,6 +42,7 @@ export default function Map() {
     googleMapsApiKey: API_KEY,
     libraries,
   });
+  const [selectedProject, setSelectedProject] = React.useState(null); 
 
   const mapRef = React.useRef();
   const onMapLoad = React.useCallback((map) => {
@@ -80,10 +81,32 @@ export default function Map() {
             }}
             icon={{
               url: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png", 
-              scaledSize: new window.google.maps.Size(35, 35)
+              scaledSize: new window.google.maps.Size(35, 35),
+              origin: new window.google.maps.Point(0, 0), 
+              anchor: new window.google.maps.Point(15, 15) 
+            }}
+            onClick={() => {
+              setSelectedProject(project); 
             }}
           />  
         ))}
+
+            {selectedProject && (
+            <InfoWindow 
+              position={{ 
+                lat: selectedProject.geometry.coordinates[1], 
+                lng: selectedProject.geometry.coordinates[0] 
+               }} 
+              onCloseClick={() => {
+              setSelectedProject(null); 
+            }}>
+              <div>
+                <h1>{selectedProject.properties.NAME}</h1>
+                <h4>{selectedProject.properties.ADDRESS}</h4>
+                <p>{selectedProject.properties.NOTES}</p>
+              </div>
+            </InfoWindow>)}
+
       </GoogleMap>
     </div>
   );
