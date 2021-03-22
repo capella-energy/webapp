@@ -11,7 +11,7 @@ export default function Dashboard() {
   return (
     <div>
       <Navbar />
-      <h1 className="section-titles">Welcome, Hans</h1>
+
       <div className="webapp-content">
         <h1 className="section-titles">Welcome, Hans</h1>
         <Slider className="slider-wrapper">
