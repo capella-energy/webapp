@@ -11,10 +11,6 @@
   height: 80vh;
 }
 
-h2 {
-  color: white;
-}
-
 h1 {
   position: absolute;
   top: 0.75rem;
@@ -24,27 +20,33 @@ h1 {
   padding: 2;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .search {
   position: absolute;
+  background-color: white;
   top: 5rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 400px;
+  max-width: 200px;
   z-index: 10;
 }
 
 .search input {
   padding: 0.5rem;
-  font-style: normal;
   font-size: 1.5rem;
-  background-color: #2d2d2e;
+  background-color: white;
   width: 100%;
+  color: black;
 }
 
 .locate {
   position: absolute;
-  top: 4.75rem;
+  top: 5rem;
   right: 1rem;
   background: #e89c35;
   border: none;
@@ -58,5 +60,13 @@ h1 {
 @media screen and (min-width: 799px) {
   .google-map {
     height: 80vh;
+  }
+
+  .pin {
+    width: 15vw;
+  }
+
+  .pin-icon {
+    font-size: 10vw;
   }
 }

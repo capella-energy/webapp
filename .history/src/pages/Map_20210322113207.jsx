@@ -34,7 +34,7 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: 40.662,
+  lat: 40.62,
   lng: -74.14435,
 };
 
@@ -145,8 +145,8 @@ function Search({ panTo }) {
     clearSuggestions,
   } = usePlacesAutocomplete({
     requestOptions: {
-      location: { lat: () => 40.662, lng: () => -74.10427 },
-      radius: 400 * 1000,
+      location: { lat: () => 43.6532, lng: () => -79.3832 },
+      radius: 100 * 1000,
     },
   });
 

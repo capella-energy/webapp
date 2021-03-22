@@ -34,7 +34,7 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: 40.662,
+  lat: 40.62,
   lng: -74.14435,
 };
 
@@ -61,7 +61,7 @@ export default function Map() {
   return (
     <div>
       
-      <Search panTo={panTo} /> 
+      <Search /> 
 
       <Locate panTo={panTo} />
 
@@ -102,7 +102,7 @@ export default function Map() {
               setSelectedProject(null); 
             }}>
               <div>
-                <h3>{selectedProject.properties.NAME}</h3>
+                <h2>{selectedProject.properties.NAME}</h2>
                 <h4>{selectedProject.properties.ADDRESS}</h4>
                 <p>{selectedProject.properties.NOTES}</p>
               </div>
@@ -145,8 +145,8 @@ function Search({ panTo }) {
     clearSuggestions,
   } = usePlacesAutocomplete({
     requestOptions: {
-      location: { lat: () => 40.662, lng: () => -74.10427 },
-      radius: 400 * 1000,
+      location: { lat: () => 43.6532, lng: () => -79.3832 },
+      radius: 100 * 1000,
     },
   });
 
@@ -171,7 +171,7 @@ function Search({ panTo }) {
 
   return (
     <div className="search">
-      <Combobox onSelect={handleSelect} onSubmit={handleSelect}>
+      <Combobox onSelect={handleSelect}>
         <ComboboxInput
           value={value}
           onChange={handleInput}

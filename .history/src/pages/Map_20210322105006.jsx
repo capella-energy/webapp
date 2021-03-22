@@ -12,7 +12,6 @@ import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,
 } from "use-places-autocomplete";
-import "@reach/combobox/styles.css";
 import {
   Combobox,
   ComboboxInput,
@@ -25,7 +24,7 @@ import * as FaIcons from "react-icons/fa";
 const API_KEY = "AIzaSyCYtOMyY2cyh4RFwtoDtQmXLjWCbfIMx3c"; 
 const libraries = ["places"];
 const mapContainerStyle = {
-  height: "100vh",
+  height: "80vh",
   width: "100vw",
 };
 const options = {
@@ -34,7 +33,7 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: 40.662,
+  lat: 40.62,
   lng: -74.14435,
 };
 
@@ -61,7 +60,7 @@ export default function Map() {
   return (
     <div>
       
-      <Search panTo={panTo} /> 
+      <Search /> 
 
       <Locate panTo={panTo} />
 
@@ -102,7 +101,7 @@ export default function Map() {
               setSelectedProject(null); 
             }}>
               <div>
-                <h3>{selectedProject.properties.NAME}</h3>
+                <h1>{selectedProject.properties.NAME}</h1>
                 <h4>{selectedProject.properties.ADDRESS}</h4>
                 <p>{selectedProject.properties.NOTES}</p>
               </div>
@@ -145,19 +144,20 @@ function Search({ panTo }) {
     clearSuggestions,
   } = usePlacesAutocomplete({
     requestOptions: {
-      location: { lat: () => 40.662, lng: () => -74.10427 },
-      radius: 400 * 1000,
+      location: { lat: () => 43.6532, lng: () => -79.3832 },
+      radius: 100 * 1000,
     },
   });
 
   // https://developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service#AutocompletionRequest
+
 
   const handleInput = (e) => {
     setValue(e.target.value);
   };
 
   const handleSelect = async (address) => {
-    setValue(address, true);
+    setValue(address, false);
     clearSuggestions();
 
     try {
@@ -165,13 +165,13 @@ function Search({ panTo }) {
       const { lat, lng } = await getLatLng(results[0]);
       panTo({ lat, lng });
     } catch (error) {
-      console.log("😱 Error: ", error);
+      console.log("Error: ", error);
     }
   };
 
   return (
     <div className="search">
-      <Combobox onSelect={handleSelect} onSubmit={handleSelect}>
+      <Combobox onSelect={handleSelect}>
         <ComboboxInput
           value={value}
           onChange={handleInput}

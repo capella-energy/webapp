@@ -38,7 +38,7 @@ h1 {
   padding: 0.5rem;
   font-style: normal;
   font-size: 1.5rem;
-  background-color: #2d2d2e;
+  background-color: #252b33;
   width: 100%;
 }
 
@@ -58,5 +58,13 @@ h1 {
 @media screen and (min-width: 799px) {
   .google-map {
     height: 80vh;
+  }
+
+  .pin {
+    width: 15vw;
+  }
+
+  .pin-icon {
+    font-size: 10vw;
   }
 }

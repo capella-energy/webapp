@@ -34,7 +34,7 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: 40.662,
+  lat: 40.62,
   lng: -74.14435,
 };
 
