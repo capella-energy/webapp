@@ -54,7 +54,7 @@ button:hover {
 .slider-wrapper {
   position: relative;
   height: 70vh;
-  width: 95%;
+  width: 98%;
   overflow: hidden;
 }
 
@@ -214,5 +214,12 @@ button:hover {
 @media (max-width: 640px) {
   .slider-content .inner h1 {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider-wrapper,
+  .slide {
+    width: 100%;
   }
 }

@@ -20,16 +20,28 @@
   font-weight: 800;
   transform: translateX(-35%);
   font-size: 30px;
+  padding-top: 5px;
+  padding: 5px;
 }
 
 .static-navbar {
+  padding-top: 5px;
   margin-bottom: 30px;
   margin-left: 0;
 }
 .bars {
+  float: right;
   font-size: 20px;
   background: none;
+  color: #e89c35;
+}
+
+.openNav {
   color: #01203a;
+}
+
+.closeNav {
+  margin-left: 160px;
 }
 
 .bars:hover {

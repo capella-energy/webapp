@@ -34,8 +34,9 @@ function Navbar() {
       })}
     </ul>
   </nav>
+  
       <div className="navbar">
-        <Link to="#" className="bars closeNav">
+        <Link to="#" className="bars openNav">
           <FaIcons.FaBars onClick={showSidebar}/>
         </Link>
         <AiIcons.AiFillCloud />
@@ -45,10 +46,12 @@ function Navbar() {
         <ul className="nav-menu-items" onClick={showSidebar}>
           
           <li className="navbar-toggle">
-          <h1 className="nav-logo">Capella</h1>
-            <Link to="#" className="bars">
+         
+          <h1 className="static-nav-logo">Capella</h1>
+          <Link to="#" className="bars closeNav">
               <AiIcons.AiOutlineClose/>
             </Link>
+            
           </li>
           {SidebarData.map((item, index) => {
             return (
