@@ -5,8 +5,33 @@
   font-family: "Montserrat";
 }
 
+.webapp-content {
+  margin-left: 240px;
+}
+
 .section-titles {
-  margin-left: 26px;
   font-weight: 500;
   font-size: 28px;
+  margin-left: 178px;
+}
+
+@media screen and (max-width: 480px) {
+  .webapp-content,
+  .section-titles {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .webapp-content,
+  .section-titles {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .webapp-content,
+  .section-titles {
+    margin-left: 0px;
+  }
 }

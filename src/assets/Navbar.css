@@ -15,6 +15,17 @@
   margin-right: 30px;
 }
 
+.static-nav-logo {
+  color: white;
+  font-weight: 800;
+  transform: translateX(-35%);
+  font-size: 30px;
+}
+
+.static-navbar {
+  margin-bottom: 30px;
+  margin-left: 0;
+}
 .bars {
   font-size: 20px;
   background: none;
@@ -23,6 +34,17 @@
 
 .bars:hover {
   color: #e89c35;
+}
+
+.staticSidebar {
+  background-color: #01203a;
+  width: 225px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1001;
 }
 
 .nav-menu {
@@ -102,5 +124,27 @@ span {
 
   .navbar-toggle {
     padding: 12px 12px 10px 19px;
+  }
+
+  .staticSidebar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .staticSidebar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .staticSidebar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .navbar {
+    visibility: hidden;
   }
 }

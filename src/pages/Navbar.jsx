@@ -14,6 +14,26 @@ function Navbar() {
 
   return (
     <>
+     <nav className="staticSidebar">
+    
+    <ul className="nav-menu-items" >
+      
+      <li className="static-navbar">
+      <h1 className="static-nav-logo">Capella</h1>
+        
+      </li>
+      {SidebarData.map((item, index) => {
+        return (
+          <li key={index} className={item.cName}>
+          <Link to={item.path}>
+            {item.icon}
+            <span>{item.title}</span>
+          </Link>
+        </li>
+        );
+      })}
+    </ul>
+  </nav>
       <div className="navbar">
         <Link to="#" className="bars closeNav">
           <FaIcons.FaBars onClick={showSidebar}/>
@@ -27,7 +47,6 @@ function Navbar() {
           <li className="navbar-toggle">
           <h1 className="nav-logo">Capella</h1>
             <Link to="#" className="bars">
-              
               <AiIcons.AiOutlineClose/>
             </Link>
           </li>

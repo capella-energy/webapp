@@ -12,24 +12,26 @@ export default function Dashboard() {
     <div>
       <Navbar />
       <h1 className="section-titles">Welcome, Hans</h1>
-
-      <Slider className="slider-wrapper">
-        {SliderData.map((item, index) => (
-          <div
-            key={index}
-            className="slider-content"
-            style={{
-              background: `url('${item.image}') no-repeat center center`,
-            }}
-          >
-            <div className="inner">
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-              <button>{item.button}</button>
+      <div className="webapp-content">
+        <h1 className="section-titles">Welcome, Hans</h1>
+        <Slider className="slider-wrapper">
+          {SliderData.map((item, index) => (
+            <div
+              key={index}
+              className="slider-content"
+              style={{
+                background: `url('${item.image}') no-repeat center center`,
+              }}
+            >
+              <div className="inner">
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+                <button>{item.button}</button>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

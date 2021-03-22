@@ -54,9 +54,8 @@ button:hover {
 .slider-wrapper {
   position: relative;
   height: 70vh;
-  width: 70%;
+  width: 95%;
   overflow: hidden;
-  margin-left: 26px;
 }
 
 .slide {
@@ -203,7 +202,6 @@ button:hover {
   .slide {
     height: calc(80vh - 75px);
     width: 100%;
-    margin-left: 12px;
   }
 }
 

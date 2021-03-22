@@ -10,6 +10,7 @@ class Learn extends Component {
         return ( 
             <div>
             <Navbar />
+            <div className="webapp-content">
             <h1 className="section-titles">Start Learning</h1>
             <div className="container learn-container">
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -25,6 +26,8 @@ class Learn extends Component {
               })}
       
             </div>
+            </div>
+
             </div>
           </div> 
          );

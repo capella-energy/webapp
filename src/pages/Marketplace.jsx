@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Map from "./Map"; 
 import Navbar from "./Navbar";
+import "../assets/App.css";
+
 
 const location = {
   address: "Capella Headquarters",
@@ -11,8 +13,11 @@ const location = {
 const Marketplace = () => (
   <div className="Marketplace">
     <Navbar />
-    <h1 className="section-titles">Find Solar Projects Nearby</h1>
-    <Map />
+    <div className="webapp-content">
+      <h1 className="section-titles">Find Solar Projects Nearby</h1>
+      <Map />
+    </div>
+    
   </div>
 )
 
