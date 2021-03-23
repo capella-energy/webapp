@@ -66,12 +66,11 @@ h1 {
 
   h1 {
     position: absolute;
-    top: 0.5rem;
-    left: 2.25rem;
+    top: 0.75rem;
+    left: 1rem;
     z-index: 10;
-    margin: 0.5;
-    padding: 0.5;
-    font-size: smaller;
+    margin: 2;
+    padding: 2;
   }
 
   .locate {

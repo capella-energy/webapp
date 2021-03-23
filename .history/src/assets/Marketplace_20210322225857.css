@@ -59,25 +59,10 @@ h1 {
     height: 80vh;
   }
 
-  .section-titles {
-    font-style: normal;
-    width: fit-content;
-  }
-
-  h1 {
-    position: absolute;
-    top: 0.5rem;
-    left: 2.25rem;
-    z-index: 10;
-    margin: 0.5;
-    padding: 0.5;
-    font-size: smaller;
-  }
-
   .locate {
     position: absolute;
     left: 1rem;
-    top: 45rem;
+    top: 40rem;
     background: #e89c35;
     border: none;
     z-index: 10;
