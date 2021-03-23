@@ -12,6 +12,7 @@
 
 #map {
   max-width: 100%;
+  max-height: 92vh;
 }
 
 h2 {
@@ -82,9 +83,9 @@ h1 {
   }
 
   .locate {
-    position: absolute;
-    right: 27.5rem;
-    top: 42.5rem;
+    position: fixed;
+    left: 5px;
+    top: 49.5rem;
     background: #e89c35;
     border: none;
     z-index: 10;
