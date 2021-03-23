@@ -12,7 +12,7 @@
 
 #map {
   max-width: 100%;
-  max-height: 92vh;
+  max-height: 93vh;
 }
 
 h2 {
@@ -29,10 +29,10 @@ h1 {
 }
 
 .search {
-  position: absolute;
+  position: fixed;
   top: 5rem;
-  left: 55%;
-  transform: translateX(-50%);
+  left: 260px;
+  border-color: #01203a;
   width: 100%;
   max-width: 400px;
   z-index: 10;
@@ -42,7 +42,9 @@ h1 {
   padding: 0.5rem;
   font-style: normal;
   font-size: 1.5rem;
-  background-color: #2d2d2e;
+  background-color: #01203a;
+  border-color: #01203a;
+
   width: 100%;
 }
 
@@ -53,6 +55,7 @@ h1 {
   background: #e89c35;
   border: none;
   z-index: 10;
+  padding: 10px 15px 10px 15px;
 }
 .locate img {
   width: 30px;
@@ -83,12 +86,13 @@ h1 {
   }
 
   .locate {
-    position: fixed;
-    left: 5px;
-    top: 49.5rem;
+    position: absolute;
+    top: 4.75rem;
+    right: 1rem;
     background: #e89c35;
     border: none;
     z-index: 10;
+    padding: 10px 15px 10px 15px;
   }
 
   .locate img {
@@ -97,10 +101,10 @@ h1 {
   }
 
   .search {
-    position: absolute;
+    position: fixed;
     top: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 15px;
+
     width: 100%;
     max-width: 200px;
     z-index: 10;
@@ -109,10 +113,9 @@ h1 {
 
 @media screen and (max-width: 480px) {
   .search {
-    position: absolute;
+    position: fixed;
     top: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 10px;
     width: 100%;
     max-width: 200px;
     z-index: 10;
