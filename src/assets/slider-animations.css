@@ -1,4 +1,4 @@
-.slide h1 {
+.slide h2 {
   transition: all 0.3s ease;
   -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
@@ -41,9 +41,9 @@
   opacity: 0;
 }
 
-.slide.animateIn.previous h1,
-.slide.current h1,
-.slide.animateIn.next h1,
+.slide.animateIn.previous h2,
+.slide.current h2,
+.slide.animateIn.next h2,
 .slide.animateIn.previous button,
 .slide.current button,
 .slide.animateIn.next button,
@@ -90,7 +90,7 @@
   transition-delay: 1.5s;
 }
 
-.slide.animateOut h1 {
+.slide.animateOut h2 {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
