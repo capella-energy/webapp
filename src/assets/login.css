@@ -6,6 +6,7 @@
   min-width: 100%;
   background-image: url("./bg22.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .inner-container {
@@ -19,13 +20,13 @@
 
 .form-control {
   border-radius: 30px !important;
-  background-color: rgba(255, 255, 255, 0.24) !important;
+  background-color: rgba(255, 255, 255, 0.212) !important;
   border: 0 !important;
   padding: 1.25rem 0.75rem !important;
 }
 
 .form-control:focus {
-  background: rgba(255, 255, 255, 0.363) !important;
+  background: rgba(255, 255, 255, 0.377) !important;
 }
 
 input,
@@ -60,6 +61,7 @@ input,
 .btn-primary:hover {
   background-color: #f0aa49 !important;
 }
+
 .text-center {
   color: white !important;
   font-family: "Montserrat" !important;
