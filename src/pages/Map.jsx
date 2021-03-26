@@ -2,6 +2,7 @@ import React from "react";
 import '../assets/Marketplace.css'; 
 import mapStyles from "./mapStyles"; 
 import * as projectData from "./solar-projects.json"; 
+
 import {
   GoogleMap,
   useLoadScript,
@@ -93,7 +94,8 @@ export default function Map() {
         ))}
 
             {selectedProject && (
-            <InfoWindow 
+            <InfoWindow
+              key={selectedProject.properties.PROJECT_ID}
               position={{ 
                 lat: selectedProject.geometry.coordinates[1], 
                 lng: selectedProject.geometry.coordinates[0] 
@@ -101,10 +103,12 @@ export default function Map() {
               onCloseClick={() => {
               setSelectedProject(null); 
             }}>
-              <div>
-                <h3>{selectedProject.properties.NAME}</h3>
-                <h4>{selectedProject.properties.ADDRESS}</h4>
-                <p>{selectedProject.properties.NOTES}</p>
+              <div className="marker-container">
+                <h3 id="markerName">{selectedProject.properties.NAME}</h3>
+                <h4 id="markerAddress">{selectedProject.properties.ADDRESS}</h4>
+                <img id="markerImg" src={selectedProject.properties.IMAGE} alt="photo"/>
+                
+                <p id="markerPP">{selectedProject.properties.NOTES}</p>
               </div>
             </InfoWindow>)}
 
