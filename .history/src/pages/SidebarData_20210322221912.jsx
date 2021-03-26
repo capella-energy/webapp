@@ -27,11 +27,5 @@ export const SidebarData = [
         path: "/update-profile",
         icon: <BsIcons.BsPerson />,
         cName: "nav-text"
-    }, 
-    {
-        title: "Logout",
-        path: "/Login",
-        icon: <FaIcons.FaSignOutAlt />,
-        cName: "nav-text" 
     }
 ]
