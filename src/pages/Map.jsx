@@ -76,16 +76,17 @@ export default function Map() {
       >
         {projectData.projects.map(project => (
           <Marker 
+            className="markerIcon"
             key={project.properties.PROJECT_ID} 
             position={{
               lat: project.geometry.coordinates[1],
               lng: project.geometry.coordinates[0]
             }}
             icon={{
-              url: "https://lh3.googleusercontent.com/pw/ACtC-3e8EOgzBylIA5SjWcbSKz97jK-it2NHTMNAa2E_21YMvh2vDpzMsD0C__ppUbU3RpUTUY1GJb3XWwc5VB3fU1Mc-ZMc6WR3qHunrA_zzSEijVeJvDZisPIGTvruRhrX0nKk94C8HfuNBtBV0hSgikQ=s32-no?authuser=2", 
-              scaledSize: new window.google.maps.Size(35, 35),
+              url: "https://lh3.googleusercontent.com/pw/ACtC-3eoIMEHvHhFrEnGjWsWYKk4bD8TY09mCUBZzBlb_erlpah5zoL710O_u2u_u5jb9e-S1B-uLXALiSlbR5bVhFO2WpkudlwXZg-74-ZRQYp7OQW5NpPIdTNCccg_pl2iAO8xU9grdN8-iWeohnW8NtJK=w95-h127-no?authuser=2", 
+              scaledSize: new window.google.maps.Size(25, 35),
               origin: new window.google.maps.Point(0, 0), 
-              anchor: new window.google.maps.Point(15, 15) 
+              anchor: new window.google.maps.Point(20, 20) 
             }}
             onClick={() => {
               setSelectedProject(project); 

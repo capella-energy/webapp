@@ -45,7 +45,7 @@ h1 {
 }
 
 .search {
-  position: fixed;
+  position: absolute;
   top: 5rem;
   left: 260px;
   border-color: #01203a;
@@ -76,6 +76,10 @@ h1 {
 .locate img {
   width: 30px;
   cursor: pointer;
+}
+
+Marker {
+  filter: drop-shadow(0px 0px 15px #000000) !important;
 }
 
 @media (max-width: 1024px) {
