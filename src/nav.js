@@ -1,4 +1,5 @@
 import React from "react";
+
 import Signup from "./pages/Signup";
 import { AuthProvider } from "./contexts/AuthContext";
 import { HashRouter, Switch, Route } from "react-router-dom";

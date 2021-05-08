@@ -8,6 +8,10 @@ body {
   outline: none;
 }
 
+.dashPage {
+  background-color: #f7f8fc;
+}
+
 button {
   -webkit-appearance: none;
   appearance: none;

@@ -9,11 +9,12 @@ import { SliderData } from "./LearnGalleryData";
 
 export default function Dashboard() {
   return (
-    <div>
+    <div className="dashPage">
       <Navbar />
 
       <div className="webapp-content">
         <h1 className="section-titles">Welcome, Hans</h1>
+
         <Slider className="slider-wrapper">
           {SliderData.map((item, index) => (
             <div

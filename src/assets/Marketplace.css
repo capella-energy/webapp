@@ -1,3 +1,7 @@
+.Marketplace {
+  background-color: #f7f8fc;
+}
+
 .map-h2 {
   text-transform: uppercase;
   font-size: 1rem;
@@ -14,6 +18,14 @@
   margin: 0 0 0 0;
 }
 
+.gm-style-iw-d {
+  overflow: visible !important;
+}
+
+.gm-style-iw {
+  padding: 0px 0 10px 0 !important;
+}
+
 #map {
   max-width: 100%;
   max-height: 93vh;
@@ -21,7 +33,6 @@
 
 #markerImg {
   max-width: 100%;
-
   padding-bottom: 10px;
 }
 
@@ -29,6 +40,7 @@
 #markerName,
 #markerAddress {
   max-width: 100%;
+  margin: 0px 10px 5px 10px;
 }
 
 h2 {
