@@ -17,17 +17,26 @@
 }
 
 .card-columns {
-  margin-right: 15px;
+  max-width: 98.5%;
 }
 
 @media screen and (max-width: 480px) {
   .card-columns {
-    margin-right: 0;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .card-columns {
-    margin-right: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-columns {
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }

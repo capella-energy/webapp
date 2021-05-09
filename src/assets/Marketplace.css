@@ -10,10 +10,6 @@
   text-align: center;
 }
 
-.google-map {
-  width: 100%;
-}
-
 .marker-container {
   margin: 0 0 0 0;
 }
@@ -27,7 +23,7 @@
 }
 
 #map {
-  max-width: 100%;
+  max-width: 98.5%;
   max-height: 70vh;
   margin-bottom: 20px;
 }
@@ -65,9 +61,8 @@ h1 {
   position: absolute;
   top: 5rem;
   left: 260px;
-  border-color: #01203a;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   z-index: 10;
 }
 
@@ -77,14 +72,14 @@ h1 {
   font-size: 1.5rem;
   background-color: #01203a;
   border-color: #01203a;
-
+  border-width: 0;
   width: 100%;
 }
 
 .locate {
   position: absolute;
   top: 5rem;
-  right: 1rem;
+  right: 2rem;
   background: #e89c35;
   border: none;
   z-index: 10;
@@ -119,7 +114,7 @@ Marker {
 
   h1 {
     position: absolute;
-    top: 0.8rem;
+    top: 0.9rem;
     left: 3.5rem;
     z-index: 10;
     margin: 0.5;
@@ -129,7 +124,7 @@ Marker {
 
   .locate {
     position: absolute;
-    top: 4.75rem;
+    top: 5rem;
     right: 1rem;
     background: #e89c35;
     border: none;

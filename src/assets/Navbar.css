@@ -20,14 +20,15 @@
   font-weight: 800;
   transform: translateX(-35%);
   font-size: 30px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .static-navbar {
-  padding-top: 15px;
+  padding-top: 18px;
   margin-bottom: 30px;
   margin-left: 0;
 }
+
 .bars {
   float: right;
   font-size: 20px;
@@ -114,7 +115,7 @@
 .navbar-toggle {
   background-color: #01203a;
   width: 100%;
-  padding: 16px 16px 10px 23px;
+  padding: 16px 16px 20px 23px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -135,10 +136,6 @@ span {
 
   .nav-text {
     padding: 2px 7px 2px 7px;
-  }
-
-  .navbar-toggle {
-    padding: 12px 12px 10px 19px;
   }
 
   .staticSidebar {

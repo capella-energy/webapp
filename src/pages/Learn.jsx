@@ -6,7 +6,6 @@ import "../assets/slider-animations.css";
 import "react-animated-slider/build/horizontal.css";
 import Slider from "react-animated-slider";
 
-import Figure from 'react-bootstrap/Figure'
 
 
 class Learn extends Component {
