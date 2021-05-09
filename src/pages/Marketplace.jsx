@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Map from "./Map"; 
 import Navbar from "./Navbar";
 import "../assets/App.css";
+import MarketColumns from "./MarketColumns"
 
-
-const location = {
-  address: "Capella Headquarters",
-  lat: 40.662,
-  lng: -74.10427,
-};
 
 const Marketplace = () => (
   <div className="Marketplace">
@@ -16,6 +11,7 @@ const Marketplace = () => (
     <div className="webapp-content">
       <h1 className="section-titles">Find Solar Projects Nearby</h1>
       <Map />
+      <MarketColumns/>
     </div>
     
   </div>
@@ -23,14 +19,3 @@ const Marketplace = () => (
 
 export default Marketplace;
 
-/*
-{projectData.projects.map(project => (
-    <Marker 
-    key={project.ID} 
-    position={{
-      lat: project.lat,
-      lng: project.lng
-    }}
-    /> 
-))}
-*/

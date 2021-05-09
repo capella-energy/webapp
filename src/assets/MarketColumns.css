@@ -1,0 +1,33 @@
+.card-footer {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  background-color: white !important;
+}
+
+.marketCardBody {
+  background-color: white;
+  border-radius: 9px !important;
+}
+
+.marketCard {
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px !important;
+  border-radius: 9px !important;
+  overflow: hidden;
+}
+
+.card-columns {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .card-columns {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-columns {
+    margin-right: 0;
+  }
+}

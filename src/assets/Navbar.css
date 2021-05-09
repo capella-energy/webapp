@@ -20,12 +20,11 @@
   font-weight: 800;
   transform: translateX(-35%);
   font-size: 30px;
-  padding-top: 5px;
   padding: 5px;
 }
 
 .static-navbar {
-  padding-top: 5px;
+  padding-top: 15px;
   margin-bottom: 30px;
   margin-left: 0;
 }

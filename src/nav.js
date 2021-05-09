@@ -20,14 +20,13 @@ function Nav() {
           <PrivateRoute exact path="/" component={Dashboard} />
           <PrivateRoute path="/learn" component={Learn} />
           <PrivateRoute path="/marketplace" component={Marketplace} />
-          <PrivateRoute path="/update-profile" component={UpdateProfile} />
-          <PrivateRoute path="/update-profile" component={UpdateProfile} />
 
           <Container className="login-container">
             <div className="inner-container">
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
+              <PrivateRoute path="/update-profile" component={UpdateProfile} />
             </div>
           </Container>
         </Switch>

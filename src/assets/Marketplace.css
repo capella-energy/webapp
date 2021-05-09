@@ -28,7 +28,12 @@
 
 #map {
   max-width: 100%;
-  max-height: 93vh;
+  max-height: 70vh;
+  margin-bottom: 20px;
+}
+
+.gmnoprint {
+  visibility: hidden;
 }
 
 #markerImg {
@@ -83,8 +88,13 @@ h1 {
   background: #e89c35;
   border: none;
   z-index: 10;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 14px 10px 14px;
 }
+
+.locate:hover {
+  background-color: #01203a;
+}
+
 .locate img {
   width: 30px;
   cursor: pointer;
@@ -124,7 +134,6 @@ Marker {
     background: #e89c35;
     border: none;
     z-index: 10;
-    padding: 10px 15px 10px 15px;
   }
 
   .locate img {
@@ -133,7 +142,7 @@ Marker {
   }
 
   .search {
-    position: fixed;
+    position: absolute;
     top: 5rem;
     left: 15px;
 
@@ -145,7 +154,7 @@ Marker {
 
 @media screen and (max-width: 480px) {
   .search {
-    position: fixed;
+    position: absolute;
     top: 5rem;
     left: 10px;
     width: 100%;

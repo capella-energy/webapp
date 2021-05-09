@@ -1,6 +1,3 @@
-
-
-
 {
     "type": "ProjectCollection",
     "crs": {
@@ -8,21 +5,18 @@
       "properties": { "name": "Capella.Database" }
     },
     "projects": [
-
-
       {
         "type": "Project",
         "properties": {
           "PROJECT_ID": 1,
           "NAME": "Liberty Solar Project",
+          "LOCATION": "Jersey City, NJ",
           "ADDRESS": "20 Liberty Avenue, Jersey City, NJ 07069",
           "IMAGE": "https://images.squarespace-cdn.com/content/v1/5223f925e4b02f25c1dc75df/1576122208794-Q3AN7DZHXNH50RNAXI4F/ke17ZwdGBToddI8pDm48kA8OHtqHjQ9gYIreuFB3lrwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhgb8oQmvBlPjkLJ-8A7pJNmoUVr7-vGB5fHg8rmz_2noRwB-dUGsSquCnVTFQcaRg/Solar-Panels-city-scape.jpg?format=2500w",
           "OPEN": null,
-          "NOTES": ["System Size: 2,500 kW, ",
-            "Contract Duration: 3-5 years, ", 
-            "Cancellation: no termination fees, ", 
-            "Your carbon offset: 3,387 tons, ", 
-            "Estimated annual savings: $238, "],
+          "SAVINGS": "10% Discount",
+          "SPOTSLEFT": "40 Spots Left",
+          "UTILITY": "Utility: PSEG",
           "CREATED_DA": null
         },
         "geometry": {
@@ -30,21 +24,24 @@
           "coordinates": [-74.056398, 40.701487]
         }
       },
-
-
       {
         "type": "Project",
         "properties": {
           "PROJECT_ID": 2,
           "NAME": "Ducks in the Sun",
+          "LOCATION": "Hoboken, NJ",
           "ADDRESS": "1 Castle Point Terrace, Hobooken, NJ 07030",
           "IMAGE": "https://lh3.googleusercontent.com/pw/ACtC-3dNewsVRW8DJD5V1LjvdnvyQJRHVt8OnwczWikcudVzHOvmQf6E_gfuxbEhWjgA0jrsu9i6nGUr8j-YrLQypWdBCo3pAtxYLMmwlMYxteR1V6Z6FEqXV6WaIf8TQMQX4ow0mspyPqCkoZAprmRLDQk=w852-h480-no?authuser=1", 
           "OPEN": null,
+          "SAVINGS": "10% Discount",
+          "SPOTSLEFT": "40 Spots Left",
+          "UTILITY": "Utility: PSEG",
           "NOTES": ["System Size: 2,500 kW, ",
                     "Contract Duration: 3-5 years, ", 
                     "Cancellation: no termination fees, ", 
                     "Your carbon offset: 3,387 tons, ", 
                     "Estimated annual savings: $238, "],
+          
           "CREATED_DA": null
         },
         "geometry": {
@@ -52,13 +49,15 @@
           "coordinates": [-74.025208, 40.744732]
         }
       },
-
-
       {
         "type": "Project",
         "properties": {
           "PROJECT_ID": 3,
           "NAME": "Walmart Solar",
+          "SAVINGS": "10% Discount",
+          "LOCATION": "Bayonne, NJ",
+          "SPOTSLEFT": "40 Spots Left",
+          "UTILITY": "Utility: PSEG",
           "ADDRESS": "1 Crossing Way, Bayonne, NJ 07002",
           "IMAGE": "https://images.squarespace-cdn.com/content/v1/5223f925e4b02f25c1dc75df/1576122208794-Q3AN7DZHXNH50RNAXI4F/ke17ZwdGBToddI8pDm48kA8OHtqHjQ9gYIreuFB3lrwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhgb8oQmvBlPjkLJ-8A7pJNmoUVr7-vGB5fHg8rmz_2noRwB-dUGsSquCnVTFQcaRg/Solar-Panels-city-scape.jpg?format=2500w", 
           "OPEN": null,
@@ -74,420 +73,65 @@
           "coordinates": [-74.107330, 40.660118]
         }
       },
-
-
       {
         "type": "Project",
         "properties": {
           "PROJECT_ID": 4,
-          "NAME": "Walmart Solar",
-          "ADDRESS": "1 Crossing Way, Bayonne, NJ 07002",
+          "NAME": "Ducks in the Sun",
+          "LOCATION": "Hoboken, NJ",
+          "ADDRESS": "1 Castle Point Terrace, Hobooken, NJ 07030",
+          "IMAGE": "https://lh3.googleusercontent.com/pw/ACtC-3dNewsVRW8DJD5V1LjvdnvyQJRHVt8OnwczWikcudVzHOvmQf6E_gfuxbEhWjgA0jrsu9i6nGUr8j-YrLQypWdBCo3pAtxYLMmwlMYxteR1V6Z6FEqXV6WaIf8TQMQX4ow0mspyPqCkoZAprmRLDQk=w852-h480-no?authuser=1", 
           "OPEN": null,
-          "NOTES": ["System Size: 2,500 kW, ",
-            "Contract Duration: 3-5 years, ", 
-            "Cancellation: no termination fees, ", 
-            "Your carbon offset: 3,387 tons, ", 
-            "Estimated annual savings: $238, "],
+          "SAVINGS": "10% Discount",
+          "SPOTSLEFT": "40 Spots Left",
+          "UTILITY": "Utility: PSEG",
+  
+          
           "CREATED_DA": null
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [-75.468561642270757, 39.23032561834377]
+          "coordinates": [-74.025208, 40.744732]
         }
       },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 5,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.926651366520872, 40.260659774950561]
-        }
-      },
-
-
       {
         "type": "Project",
         "properties": {
           "PROJECT_ID": 6,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
+          "NAME": "Community Project",
+          "LOCATION": "Jersey City, NJ",
+          "ADDRESS": "20 Liberty Avenue, Jersey City, NJ 07069",
+          "IMAGE": "https://images.squarespace-cdn.com/content/v1/5223f925e4b02f25c1dc75df/1576122208794-Q3AN7DZHXNH50RNAXI4F/ke17ZwdGBToddI8pDm48kA8OHtqHjQ9gYIreuFB3lrwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhgb8oQmvBlPjkLJ-8A7pJNmoUVr7-vGB5fHg8rmz_2noRwB-dUGsSquCnVTFQcaRg/Solar-Panels-city-scape.jpg?format=2500w",
           "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
+          "SAVINGS": "10% Discount",
+          "SPOTSLEFT": "40 Spots Left",
+          "UTILITY": "Utility: PSEG",
           "CREATED_DA": null
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [-75.760933332842754, 40.345566668964558]
+          "coordinates": [-74.056398, 40.701487]
         }
       },
-
-
       {
         "type": "Project",
         "properties": {
-          "PROJECT_ID": 7,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
+          "PROJECT_ID": 6,
+          "NAME": "Community Project",
+          "LOCATION": "Jersey City, NJ",
+          "ADDRESS": "20 Liberty Avenue, Jersey City, NJ 07069",
+          "IMAGE": "https://sandeeresearch.files.wordpress.com/2015/03/solar-panel.jpg",
           "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
+          "SAVINGS": "10% Discount",
+          "SPOTSLEFT": "40 Spots Left",
+          "UTILITY": "Utility: PSEG",
           "CREATED_DA": null
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [-75.625996131485707, 40.375401587496128]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 8,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.857009812435976, 40.290758029776626]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 9,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-76.206087708136721, 40.470459866077654]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 10,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.760235255689508, 40.280622216516925]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 11,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.60118478829267, 40.147641950106689]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 12,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.703622500360268, 40.408488357092367]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 13,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.609516309730921, 40.314086718258636]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 14,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.562796920677627, 40.429643413219814]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 15,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.907108695123526, 40.26222860981953]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 16,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-76.09244957349965, 40.499050061534312]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 17,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.695392300925718, 40.315355581248873]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 18,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.601158413850058, 40.436441777242031]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 19,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.681193500335723, 40.400372622455215]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 20,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.553065849890629, 40.265433081236672]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 21,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.686746214582783, 40.22266136322127]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 22,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.556978502821494, 40.261353985880973]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 23,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.747348794023239, 40.275696004260205]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 24,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.632030968141081, 40.450696284941976]
-        }
-      },
-
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 25,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.471003922143311, 40.450391044010431]
-        }
-      },
-
-      
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 26,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.931122879767898, 40.34125624499935]
-        }
-      },
-
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 27,
-          "NAME": "Sam's Solar",
-          "ADDRESS": "420 Example Dr, Townville, State 00000",
-          "OPEN": null,
-          "NOTES": "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ",
-          "CREATED_DA": null
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.931122879767898, 40.863421]
+          "coordinates": [-74.056398, 40.701487]
         }
       }
-
-
-
-
+      
     ]
   }

@@ -6,6 +6,8 @@ import "../assets/slider-animations.css";
 import "react-animated-slider/build/horizontal.css";
 import Slider from "react-animated-slider";
 
+import Figure from 'react-bootstrap/Figure'
+
 
 class Learn extends Component {
     state = {  }
@@ -34,7 +36,8 @@ class Learn extends Component {
                     </div>
                   </div>))}
                 </Slider>
-       
+
+
                 <div className="container learn-container">
                   <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     {LearnGalleryData.map((item, index) => {

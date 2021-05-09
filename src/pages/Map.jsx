@@ -108,8 +108,7 @@ export default function Map() {
               <img id="markerImg" src={selectedProject.properties.IMAGE} alt="photo"/>
                 <h3 id="markerName">{selectedProject.properties.NAME}</h3>
                 <h4 id="markerAddress">{selectedProject.properties.ADDRESS}</h4>
-                
-                
+                <h4 id="markerAddress">{selectedProject.properties.SAVINGS}</h4>
                 <p id="markerPP">{selectedProject.properties.NOTES}</p>
               </div>
             </InfoWindow>)}
