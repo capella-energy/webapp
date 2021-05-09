@@ -29,6 +29,12 @@
   margin-left: 0;
 }
 
+#myTitle {
+  font-weight: 200;
+  color: #e89c35;
+  margin-left: 23px;
+}
+
 .bars {
   float: right;
   font-size: 20px;
@@ -41,7 +47,8 @@
 }
 
 .closeNav {
-  margin-left: 160px;
+  margin-left: 170px;
+  transform: translateY(10px);
 }
 
 .bars:hover {
@@ -121,7 +128,7 @@
   align-items: center;
 }
 
-span {
+#title-span {
   margin-left: 16px;
 }
 

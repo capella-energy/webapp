@@ -19,7 +19,7 @@ function Navbar() {
     <ul className="nav-menu-items" >
       
       <li className="static-navbar">
-      <h1 className="static-nav-logo">Capella</h1>
+      <h1 className="static-nav-logo"><span id="myTitle">my</span>Capella</h1>
         
       </li>
       {SidebarData.map((item, index) => {
@@ -27,7 +27,7 @@ function Navbar() {
           <li key={index} className={item.cName}>
           <Link to={item.path}>
             {item.icon}
-            <span>{item.title}</span>
+            <span id="title-span">{item.title}</span>
           </Link>
         </li>
         );
@@ -47,7 +47,7 @@ function Navbar() {
           
           <li className="navbar-toggle">
          
-          <h1 className="static-nav-logo">Capella</h1>
+          <h1 className="static-nav-logo"><span id="myTitle">my</span>Capella</h1>
           <Link to="#" className="bars closeNav">
               <AiIcons.AiOutlineClose/>
             </Link>
@@ -58,7 +58,7 @@ function Navbar() {
               <li key={index} className={item.cName}>
               <Link to={item.path}>
                 {item.icon}
-                <span>{item.title}</span>
+                <span id="title-span">{item.title}</span>
               </Link>
             </li>
             );
