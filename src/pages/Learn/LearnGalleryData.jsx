@@ -1,11 +1,8 @@
-import image1 from "../assets/solarimage1.webp"
-import image2 from "../assets/solarimage2.jpeg"
-import image3 from "../assets/solarimage3.jpeg"
-import image4 from "../assets/solarimage4.jpg"
-import image5 from "../assets/slide3.png";
-import image6 from "../assets/slide2.png";
+import image1 from "../../assets/img/solarimage1.webp"
+import image2 from "../../assets/img/solarimage2.jpeg"
+import image3 from "../../assets/img/solarimage3.jpeg"
+import image4 from "../../assets/img/solarimage4.jpg"
 
-const image11 = "../assets/slide2.png";
 
 export const SliderData = [
     {
@@ -27,37 +24,37 @@ export const LearnGalleryData = [
     {
         title: "Getting to Know Community Solar",
         cName: "col",
-        image: <img src={image1} />
+        image: <img src={image1} alt="image1" />
     
     },
     {
         title: "Getting to Know Community Solar",
         cName: "col",
-        image: <img src={image2} />
+        image: <img src={image2} alt="image1" />
     
     },
     {
         title: "Getting to Know Community Solar",
         cName: "col",
-        image: <img src={image3} />
+        image: <img src={image3} alt="image1"/>
     
     },
     {
         title: "Getting to Know Community Solar",
         cName: "col",
-        image: <img src={image4} />
+        image: <img src={image4} alt="image1" />
     
     },
     {
         title: "Getting to Know Community Solar",
         cName: "col",
-        image: <img src={image2} />
+        image: <img src={image2} alt="image1"  />
     
     },
     {
         title: "Getting to Know Community Solar",
         cName: "col",
-        image: <img src={image1} />
+        image: <img src={image1} alt="image1" />
     
     },
     

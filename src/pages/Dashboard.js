@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import "../assets/Dashboard.css";
-import "../assets/slider-animations.css";
+import "./Learn/slider-animations.css";
 
-import { SliderData } from "./LearnGalleryData";
+import { SliderData } from "./Learn/LearnGalleryData";
 
 export default function Dashboard() {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import * as projectData from "./solar-projects.json"; 
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
-import "../assets/MarketColumns.css"
+import "./MarketColumns.css"
 
 
 const MarketColumns = () => (

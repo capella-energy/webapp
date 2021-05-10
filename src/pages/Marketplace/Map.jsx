@@ -1,5 +1,5 @@
 import React from "react"; 
-import '../assets/Marketplace.css'; 
+import './Marketplace.css'; 
 import mapStyles from "./mapStyles"; 
 import * as projectData from "./solar-projects.json"; 
 
@@ -105,7 +105,7 @@ export default function Map() {
               setSelectedProject(null); 
             }}>
               <div className="marker-container">
-              <img id="markerImg" src={selectedProject.properties.IMAGE} alt="photo"/>
+              <img id="markerImg" src={selectedProject.properties.IMAGE} alt="photo1"/>
                 <h3 id="markerName">{selectedProject.properties.NAME}</h3>
                 <h4 id="markerAddress">{selectedProject.properties.ADDRESS}</h4>
                 <h4 id="markerAddress">{selectedProject.properties.SAVINGS}</h4>

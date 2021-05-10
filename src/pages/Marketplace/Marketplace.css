@@ -28,7 +28,7 @@
   margin-bottom: 20px;
 }
 
-.gmnoprint {
+.gmnoprint div {
   visibility: hidden;
 }
 
@@ -78,8 +78,8 @@ h1 {
 
 .locate {
   position: absolute;
-  top: 5rem;
-  right: 2rem;
+  top: 4.9rem;
+  right: 2.2rem;
   background: #e89c35;
   border: none;
   z-index: 10;
@@ -124,7 +124,7 @@ Marker {
 
   .locate {
     position: absolute;
-    top: 5rem;
+    top: 4.9rem;
     right: 1rem;
     background: #e89c35;
     border: none;

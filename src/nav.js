@@ -1,16 +1,16 @@
 import React from "react";
 
-import Signup from "./pages/Signup";
+import Signup from "./pages/Login/Signup";
 import { AuthProvider } from "./contexts/AuthContext";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Dashboard from "./pages/Dashboard";
-import Marketplace from "./pages/Marketplace";
-import Login from "./pages/Login";
+import Marketplace from "./pages/Marketplace/Marketplace";
+import Login from "./pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
-import ForgotPassword from "./pages/ForgotPassword";
-import UpdateProfile from "./pages/UpdateProfile";
-import Learn from "./pages/Learn";
+import ForgotPassword from "./pages/Login/ForgotPassword";
+import UpdateProfile from "./pages/Login/UpdateProfile";
+import Learn from "./pages/Learn/Learn";
 
 function Nav() {
   return (

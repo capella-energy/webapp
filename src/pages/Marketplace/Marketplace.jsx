@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "./Map"; 
-import Navbar from "./Navbar";
-import "../assets/App.css";
+import Navbar from "../Navbar/Navbar";
+import "../../assets/App.css";
 import MarketColumns from "./MarketColumns"
 
 

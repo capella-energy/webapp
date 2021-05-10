@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from "./Navbar"; 
-import "../assets/Learn.css";
+import Navbar from "../Navbar/Navbar"; 
+import "./Learn.css";
 import { LearnGalleryData, SliderData } from './LearnGalleryData';
-import "../assets/slider-animations.css";
+import "./slider-animations.css";
 import "react-animated-slider/build/horizontal.css";
 import Slider from "react-animated-slider";
 
