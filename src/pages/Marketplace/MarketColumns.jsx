@@ -1,35 +1,81 @@
 import React from "react";
-import * as projectData from "./solar-projects.json"; 
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 import "./MarketColumns.css"
 
+import firebase from "firebase"; 
+const db = firebase.firestore();
 
-const MarketColumns = () => (
-    <CardColumns>
-        {projectData.projects.map(project => (
-          <Card className="marketCard">
-            <Card.Img variant="top"  src={project.properties.IMAGE} />
-            <Card.Footer>
-              <small className="text-muted">{project.properties.LOCATION}</small>
-            </Card.Footer>
-            <Card.Body className="marketCardBody">
-              <Card.Title>{project.properties.NAME}</Card.Title>
-              <Card.Text>
-                {project.properties.SAVINGS}
-              </Card.Text>
-              <Card.Text>
-                {project.properties.SPOTSLEFT}
-              </Card.Text>
-              <Card.Text>
-                {project.properties.UTILITY}
-              </Card.Text>
-            </Card.Body>
-            
-          </Card>
-        ))}
-      </CardColumns>
+class MarketColumns extends React.Component {
 
-)
+  constructor(props){
+    super(props);
+  
+    this.state = {
+      projects: []
+    }
+  }
+  
+  componentDidMount = () => {
+      db.collection("Projects").get().then((snapshot) => (
+          snapshot.forEach((doc) => (
+              this.setState((prevState) => ({
+                  projects: [...prevState.projects, {
+                      ID: doc.Key,
+                      Availability: doc.data().Availability,
+                      Coordinates: doc.data().Coordinates,
+                      ImageURL: doc.data().ImageURL,
+                      Location: doc.data().Location,
+                      Name: doc.data().Name,
+                      Savings: doc.data().Savings,
+                      Utility: doc.data().Utility
+                  }]
+              }))
+          ))
+      ))
+      
+  }
+
+
+    
+  
+  
+  render() {
+    let displayProjects = this.state.projects.map((p) => (
+      <div key={p.ID}>
+          <CardColumns>
+              <Card className="marketCard">
+                <Card.Img src={p.ImageURL} variant="top" />
+                <Card.Footer>
+                  <small className="text-muted">{p.Location}</small>
+                </Card.Footer>
+                <Card.Body className="marketCardBody">
+                  <Card.Title>{p.Name}</Card.Title>
+                  <Card.Text>
+                      {p.Savings}
+                  </Card.Text>
+                  <Card.Text>
+                      {p.Availability}
+                  </Card.Text>
+                  <Card.Text>
+                      {p.Utility}
+                  </Card.Text>
+                </Card.Body>   
+              </Card>
+          </CardColumns>
+      </div>))
+  
+    return(
+      <div>
+        {displayProjects}
+      </div>
+      );
+    }
+    
+    
+  }
+
+
+  
 
 export default MarketColumns;
