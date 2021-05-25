@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from "../Navbar/Navbar"; 
 import "./Learn.css";
-import { LearnGalleryData, SliderData } from './LearnGalleryData';
-import "./slider-animations.css";
-import "react-animated-slider/build/horizontal.css";
-import Slider from "react-animated-slider";
-
-
+import { LearnGalleryData } from './LearnGalleryData';
+import SliderComponent from './Slider';
 
 class Learn extends Component {
     state = {  }
@@ -14,28 +10,9 @@ class Learn extends Component {
         return ( 
             <div className="learnPage">
               <Navbar />
-
               <div className="webapp-content">
-
                 <h1 className="section-titles">Start Learning</h1>
-
-                <Slider className="slider-wrapper">
-                  {SliderData.map((item, index) => (
-                    <div
-                      key={index}
-                      className="slider-content"
-                      style={{
-                        background: `url('${item.image}') no-repeat center center`,
-                      }}
-                    >
-                    <div className="inner">
-                      <h2>{item.title}</h2>
-                      <p>{item.description}</p>
-                      <button>{item.button}</button>
-                    </div>
-                  </div>))}
-                </Slider>
-
+                <SliderComponent />
 
                 <div className="container learn-container">
                   <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -53,8 +30,6 @@ class Learn extends Component {
 
                   </div>
                 </div>
-
-
          );
     }
 }

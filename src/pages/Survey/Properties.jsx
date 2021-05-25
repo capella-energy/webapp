@@ -28,6 +28,7 @@ const Properties = () => {
         city: city, 
         state: state, 
         zip: zip, 
+        uid: id
       })
       .then(() => {
         setLoader(false);

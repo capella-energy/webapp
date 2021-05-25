@@ -4,14 +4,14 @@ import Signup from "./pages/Login/Signup";
 import { AuthProvider } from "./contexts/AuthContext";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import Dashboard from "./pages/Dashboard";
 import Marketplace from "./pages/Marketplace/Marketplace";
 import Login from "./pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
 import ForgotPassword from "./pages/Login/ForgotPassword";
 import UpdateProfile from "./pages/Login/UpdateProfile";
 import Learn from "./pages/Learn/Learn";
-import Properties from "./pages/Survey/Properties"; 
+import Properties from "./pages/Survey/Properties";
+import Dashboard from "./pages/Dashboard";
 
 function Nav() {
   return (
