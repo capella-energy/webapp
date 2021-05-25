@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Button, Card } from "react-bootstrap"; 
 import firebase from "firebase"; 
 import { useHistory } from "react-router-dom";
+import "firebase/auth";
 
 const db = firebase.firestore();
 
@@ -18,9 +19,10 @@ const Properties = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
-
+    const id = firebase.auth().currentUser.uid;
     db.collection("Users")
-      .add({
+      .doc(id)
+      .set({
         name: name,
         addy: addy,
         city: city, 
