@@ -31,6 +31,7 @@ const Properties = () => {
       })
       .then(() => {
         setLoader(false);
+        alert("Thank you");
         history.push("/");
       })
       .catch((error) => {
