@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar/Navbar";
 import Slider from "react-animated-slider";
+import firebase from "firebase"; 
+import {docName} from "./Survey/Properties"; 
 import "react-animated-slider/build/horizontal.css";
 import "../assets/Dashboard.css";
 import "./Learn/slider-animations.css";
 
 import { SliderData } from "./Learn/LearnGalleryData";
+
+const db = firebase.firestore(); 
 
 export default function Dashboard() {
   return (
@@ -13,7 +17,7 @@ export default function Dashboard() {
       <Navbar />
 
       <div className="webapp-content">
-        <h1 className="section-titles">Welcome, Hans</h1>
+        <h1 className="section-titles">Welcome</h1>
 
         <Slider className="slider-wrapper">
           {SliderData.map((item, index) => (

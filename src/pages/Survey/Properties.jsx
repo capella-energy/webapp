@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { Form, Button, Card } from "react-bootstrap"; 
 import firebase from "firebase"; 
+import { useHistory } from "react-router-dom";
+
+const db = firebase.firestore();
 
 const Properties = () => {
   const [name, setName] = useState("");
   const [addy, setAddy] = useState("");
   const [city, setCity] = useState("");
+  const [state, setState] = useState(""); 
+  const [zip, setZip] = useState(""); 
 
-  const [loader, setLoader] = useState(false); 
-
-  const db = firebase.firestore(); 
+  const history = useHistory();
+  const [loader, setLoader] = useState(false);  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,11 +23,14 @@ const Properties = () => {
       .add({
         name: name,
         addy: addy,
-        city: city,
+        city: city, 
+        state: state, 
+        zip: zip, 
       })
       .then(() => {
         setLoader(false);
         alert("Thank you");
+        history.push("/");
       })
       .catch((error) => {
         alert(error.message);
@@ -32,7 +39,9 @@ const Properties = () => {
 
     setName("");
     setAddy("");
-    setCity("");
+    setCity(""); 
+    setState(""); 
+    setZip(""); 
   };
 
   return (
@@ -62,6 +71,20 @@ const Properties = () => {
                 onChange={(e) => setCity(e.target.value)}
               />
             </Form.Group>
+            <Form.Group id="state">
+              <Form.Control
+                placeholder="State"
+                value={state}
+                onChange={(e) => setState(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group id="zip">
+              <Form.Control
+                placeholder="Zipcode"
+                value={zip}
+                onChange={(e) => setZip(e.target.value)}
+              />
+            </Form.Group>
             <Button disabled={loader} className="w-100" type="submit">
               Next
             </Button>
@@ -72,4 +95,7 @@ const Properties = () => {
   );
 };
 
+var docName = db.name; 
+ 
+export {docName}; 
 export default Properties;
