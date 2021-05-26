@@ -3,6 +3,9 @@ import { Form, Button, Card } from "react-bootstrap";
 import firebase from "firebase"; 
 import { useHistory } from "react-router-dom";
 import "firebase/auth";
+import "./Survey.css"
+import "../Login/login.css"
+import progressIMG from "../../assets/img/progress.svg"
 
 const db = firebase.firestore();
 
@@ -50,7 +53,8 @@ const Properties = () => {
     <>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Let's Get to Know You a Bit Better</h2>
+          <img id="progressIMG"src={progressIMG} alt=""/>
+          <h2 className="text-center mb-4">Let's Get to Know You Better</h2>
           <Form onSubmit={handleSubmit}>
             <Form.Group id="name">
               <Form.Control
