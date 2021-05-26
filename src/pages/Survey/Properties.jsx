@@ -86,6 +86,7 @@ const Properties = () => {
             </Form.Group>
             <Form.Group id="zip">
               <Form.Control
+                type="number"
                 placeholder="Zipcode"
                 value={zip}
                 onChange={(e) => setZip(e.target.value)}
@@ -101,7 +102,4 @@ const Properties = () => {
   );
 };
 
-var docName = db.name; 
- 
-export {docName}; 
 export default Properties;
