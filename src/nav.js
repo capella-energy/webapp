@@ -11,6 +11,7 @@ import ForgotPassword from "./pages/Login/ForgotPassword";
 import UpdateProfile from "./pages/Login/UpdateProfile";
 import Learn from "./pages/Learn/Learn";
 import Properties from "./pages/Survey/Properties";
+import UtilityData from "./pages/Survey/UtilityData";
 import Dashboard from "./pages/Dashboard";
 
 function Nav() {
@@ -28,6 +29,7 @@ function Nav() {
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
               <PrivateRoute path="/properties" component={Properties} />
+              <PrivateRoute path="/connect-utility" component={UtilityData} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
             </div>
           </Container>

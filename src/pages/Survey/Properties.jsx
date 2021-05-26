@@ -35,7 +35,7 @@ const Properties = () => {
       })
       .then(() => {
         setLoader(false);
-        history.push("/");
+        history.push("/connect-utility");
       })
       .catch((error) => {
         alert(error.message);
@@ -61,6 +61,7 @@ const Properties = () => {
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                required
               />
             </Form.Group>
             <Form.Group id="address">
@@ -68,6 +69,7 @@ const Properties = () => {
                 placeholder="Address"
                 value={addy}
                 onChange={(e) => setAddy(e.target.value)}
+                required
               />
             </Form.Group>
             <Form.Group id="city">
@@ -75,6 +77,7 @@ const Properties = () => {
                 placeholder="City"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
+                required
               />
             </Form.Group>
             <Form.Group id="state">
@@ -82,6 +85,7 @@ const Properties = () => {
                 placeholder="State"
                 value={state}
                 onChange={(e) => setState(e.target.value)}
+                required
               />
             </Form.Group>
             <Form.Group id="zip">
@@ -90,6 +94,7 @@ const Properties = () => {
                 placeholder="Zipcode"
                 value={zip}
                 onChange={(e) => setZip(e.target.value)}
+                required
               />
             </Form.Group>
             <Button disabled={loader} className="w-100" type="submit">
