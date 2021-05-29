@@ -2,6 +2,7 @@ import React from "react";
 import './Marketplace.css'; 
 import mapStyles from "./mapStyles"; 
 import * as projectData from "./solar-projects.json"; 
+import firebase from "firebase";
 
 import {
   GoogleMap,
@@ -38,6 +39,23 @@ const center = {
   lat: 40.7451,
   lng: -74.0248,
 };
+
+// const rootref = firebase.firestore().collection("Projects");
+const projectList = []
+// rootref.get().then(function(querySnapshot){
+// querySnapshot.forEach(function(doc) {
+// projectList.push(doc.data())
+// console.log(doc.data())
+// });
+// });
+
+
+console.log("LOOK BELOW")
+console.log(projectList)
+console.log("LOOK ABOVE") 
+
+
+
 
 export default function Map() {
   const { isLoaded, loadError } = useLoadScript({

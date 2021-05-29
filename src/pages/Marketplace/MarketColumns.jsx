@@ -35,10 +35,6 @@ class MarketColumns extends React.Component {
       ))
       
   }
-
-
-    
-  
   
   render() {
     let displayProjects = this.state.projects.map((p) => (
