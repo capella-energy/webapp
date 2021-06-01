@@ -3,6 +3,9 @@ import Map from "./Map";
 import Navbar from "../Navbar/Navbar";
 import "../../assets/App.css";
 import MarketColumns from "./MarketColumns"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+AOS.init()
 
 
 const Marketplace = () => (

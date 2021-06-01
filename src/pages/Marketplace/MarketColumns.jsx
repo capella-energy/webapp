@@ -39,32 +39,37 @@ class MarketColumns extends React.Component {
   render() {
     let displayProjects = this.state.projects.map((p) => (
       <div key={p.ID}>
-          <CardColumns>
-              <Card className="marketCard">
+              <Card  className="marketCard">
                 <Card.Img src={p.ImageURL} variant="top" />
                 <Card.Footer>
                   <small className="text-muted">{p.Location}</small>
                 </Card.Footer>
                 <Card.Body className="marketCardBody">
-                  <Card.Title>{p.Name}</Card.Title>
+                  <Card.Title className="cardTitle">{p.Name}</Card.Title>
+                  <div className="cardDetails">
                   <Card.Text>
+                    Savings: <span> </span>
                       {p.Savings}
                   </Card.Text>
                   <Card.Text>
+                  Availability: <span> </span>
                       {p.Availability}
                   </Card.Text>
                   <Card.Text>
+                  Utility: <span> </span>
                       {p.Utility}
                   </Card.Text>
+                  <button>Subscribe</button>
+                  </div>
                 </Card.Body>   
               </Card>
-          </CardColumns>
+     
       </div>))
   
     return(
-      <div>
+      <CardColumns>
         {displayProjects}
-      </div>
+        </CardColumns>
       );
     }
     

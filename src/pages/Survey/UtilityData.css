@@ -12,3 +12,7 @@ iframe {
 #header-logo {
   width: 600px;
 }
+
+.form-check-label {
+  color: rgb(241, 238, 238) !important;
+}
