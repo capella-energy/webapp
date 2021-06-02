@@ -33,13 +33,19 @@ export default function Signup() {
   }
 
   return (
-    <>
+    <div>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Sign Up</h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="text-center mb-4"
+          >
+            Sign Up
+          </h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
+            <Form.Group data-aos="fade-up" data-aos-duration="700" id="email">
               <Form.Control
                 type="email"
                 placeholder="Email"
@@ -47,7 +53,11 @@ export default function Signup() {
                 required
               />
             </Form.Group>
-            <Form.Group id="password">
+            <Form.Group
+              data-aos="fade-up"
+              data-aos-duration="900"
+              id="password"
+            >
               <Form.Control
                 type="password"
                 placeholder="Password"
@@ -55,7 +65,11 @@ export default function Signup() {
                 required
               />
             </Form.Group>
-            <Form.Group id="password-confirm">
+            <Form.Group
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              id="password-confirm"
+            >
               <Form.Control
                 type="password"
                 placeholder="Password Confirmation"
@@ -63,18 +77,28 @@ export default function Signup() {
                 required
               />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              disabled={loading}
+              className="w-100"
+              type="submit"
+            >
               Sign Up
             </Button>
           </Form>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1800"
+        className="w-100 text-center mt-2"
+      >
         Already have an account?{" "}
         <Link className="links" to="/login">
           Log In
         </Link>
       </div>
-    </>
+    </div>
   );
 }

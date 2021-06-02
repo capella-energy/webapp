@@ -38,7 +38,7 @@ const UtilityData = () => {
       })
       .then(() => {
         setLoader(false);
-        history.push("/");
+        history.push("/complete");
       })
       .catch((error) => {
         alert(error.message);
@@ -55,12 +55,12 @@ const UtilityData = () => {
   
   return (
     <>
-      <Card>
+      <Card >
         <Card.Body>
-          <img id="progressIMG"src={progressIMG} alt=""/>
-          <h2 className="text-center mb-4">Connect Your Utility Data</h2>
+          <img data-aos="fade-right" data-aos-duration="500"  id="progressIMG"src={progressIMG} alt=""/>
+          <h2 data-aos="fade-right" data-aos-duration="700" className="text-center mb-4">Connect Your Utility Data</h2>
           <Form onSubmit={handleSubmit}>
-            <Form.Group id="name">
+            <Form.Group data-aos="fade-right" data-aos-duration="900" id="name">
               <Form.Control
                 placeholder="Customer Email"
                 value={utilityEmail}
@@ -68,7 +68,7 @@ const UtilityData = () => {
                 required
               />
             </Form.Group>
-            <Form.Group id="address">
+            <Form.Group data-aos="fade-right" data-aos-duration="1200" id="address">
               <Form.Control
                 placeholder="Customer Utility"
                 value={utility}
@@ -76,7 +76,7 @@ const UtilityData = () => {
                 required
               />
             </Form.Group>
-            <Form.Group id="city">
+            <Form.Group data-aos="fade-right" data-aos-duration="1500" id="city">
               <Form.Control
                 placeholder="Utility User Name"
                 value={utilityUser}
@@ -84,7 +84,7 @@ const UtilityData = () => {
                 required
               />
             </Form.Group>
-            <Form.Group id="state">
+            <Form.Group data-aos="fade-right" data-aos-duration="1700"  id="state">
               <Form.Control
                 placeholder="Utility User Password"
                 value={utilityPassword}
@@ -92,16 +92,16 @@ const UtilityData = () => {
                 required
               />
             </Form.Group>
-            <Form.Group  >
+            <Form.Group data-aos="fade-right" data-aos-duration="1900"  >
               <Form.Check id="formCheck" required type="checkbox" label="I authorize Capella to collect my billing & usage history." />
             </Form.Group>
 
      
-            <Button className="w-100" type="submit">
+            <Button data-aos="fade-right" data-aos-duration="2000"  className="w-100" type="submit">
             Next
             </Button>
             </Form>
-          <div className="w-100 text-center mt-3">
+          <div data-aos="fade-right" data-aos-duration="2100"  className="w-100 text-center mt-3">
             <Link className="links" to="/">
               Skip for now
             </Link>

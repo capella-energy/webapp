@@ -31,10 +31,16 @@ export default function Login() {
     <>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Log In</h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="text-center mb-4"
+          >
+            Log In
+          </h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
+            <Form.Group data-aos="fade-up" data-aos-duration="700" id="email">
               <Form.Control
                 className="form-input"
                 type="email"
@@ -43,7 +49,11 @@ export default function Login() {
                 required
               />
             </Form.Group>
-            <Form.Group id="password">
+            <Form.Group
+              data-aos="fade-up"
+              data-aos-duration="900"
+              id="password"
+            >
               <Form.Control
                 type="password"
                 placeholder="Password"
@@ -51,18 +61,32 @@ export default function Login() {
                 required
               />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              disabled={loading}
+              className="w-100"
+              type="submit"
+            >
               Log In
             </Button>
           </Form>
-          <div className="w-100 text-center mt-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="w-100 text-center mt-3"
+          >
             <Link className="links" to="/forgot-password">
               Forgot Password?
             </Link>
           </div>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1800"
+        className="w-100 text-center mt-2"
+      >
         Need an account?{" "}
         <Link className="links" to="/signup">
           Sign Up

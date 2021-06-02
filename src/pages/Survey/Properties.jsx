@@ -51,12 +51,12 @@ const Properties = () => {
 
   return (
     <>
-      <Card>
+      <Card >
         <Card.Body>
-          <img id="progressIMG"src={progressIMG} alt=""/>
-          <h2 className="text-center mb-4">Let's Get to Know You Better</h2>
+          <img data-aos="fade-up" data-aos-duration="500"  id="progressIMG"src={progressIMG} alt=""/>
+          <h2 data-aos="fade-up" data-aos-duration="800"  className="text-center mb-4">Let's Get to Know You Better</h2>
           <Form onSubmit={handleSubmit}>
-            <Form.Group id="name">
+            <Form.Group data-aos="fade-up" data-aos-duration="700" id="name">
               <Form.Control
                 placeholder="Name"
                 value={name}
@@ -64,7 +64,7 @@ const Properties = () => {
                 required
               />
             </Form.Group>
-            <Form.Group id="address">
+            <Form.Group data-aos="fade-up" data-aos-duration="900" id="address">
               <Form.Control
                 placeholder="Address"
                 value={addy}
@@ -72,7 +72,7 @@ const Properties = () => {
                 required
               />
             </Form.Group>
-            <Form.Group id="city">
+            <Form.Group data-aos="fade-up" data-aos-duration="1200"  id="city">
               <Form.Control
                 placeholder="City"
                 value={city}
@@ -80,7 +80,7 @@ const Properties = () => {
                 required
               />
             </Form.Group>
-            <Form.Group id="state">
+            <Form.Group data-aos="fade-up" data-aos-duration="1300"  id="state">
               <Form.Control
                 placeholder="State"
                 value={state}
@@ -88,7 +88,7 @@ const Properties = () => {
                 required
               />
             </Form.Group>
-            <Form.Group id="zip">
+            <Form.Group data-aos="fade-up" data-aos-duration="1500"  id="zip">
               <Form.Control
                 type="number"
                 placeholder="Zipcode"
@@ -97,7 +97,7 @@ const Properties = () => {
                 required
               />
             </Form.Group>
-            <Button disabled={loader} className="w-100" type="submit">
+            <Button data-aos="fade-up" data-aos-duration="1800"  disabled={loader} className="w-100" type="submit">
               Next
             </Button>
           </Form>
