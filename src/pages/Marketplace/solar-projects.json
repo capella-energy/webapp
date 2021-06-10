@@ -10,15 +10,7 @@
         "properties": {
           "PROJECT_ID": 1,
           "NAME": "Liberty Solar Project",
-          "LOCATION": "Jersey City, NJ",
-          "ADDRESS": "20 Liberty Avenue, Jersey City, NJ 07069",
-          "IMAGE": "https://images.squarespace-cdn.com/content/v1/5223f925e4b02f25c1dc75df/1576122208794-Q3AN7DZHXNH50RNAXI4F/ke17ZwdGBToddI8pDm48kA8OHtqHjQ9gYIreuFB3lrwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhgb8oQmvBlPjkLJ-8A7pJNmoUVr7-vGB5fHg8rmz_2noRwB-dUGsSquCnVTFQcaRg/Solar-Panels-city-scape.jpg?format=2500w",
-          "OPEN": null,
-          "SAVINGS": "10% Discount",
-          "SPOTSLEFT": "40 Spots Left",
-          "UTILITY": "Utility: PSEG",
-          "CREATED_DA": null
-        },
+          "LOCATION": "Jersey City, NJ"        },
         "geometry": {
           "type": "Point",
           "coordinates": [-74.056398, 40.701487]
@@ -29,21 +21,7 @@
         "properties": {
           "PROJECT_ID": 2,
           "NAME": "Ducks in the Sun",
-          "LOCATION": "Hoboken, NJ",
-          "ADDRESS": "1 Castle Point Terrace, Hobooken, NJ 07030",
-          "IMAGE": "https://lh3.googleusercontent.com/pw/ACtC-3dNewsVRW8DJD5V1LjvdnvyQJRHVt8OnwczWikcudVzHOvmQf6E_gfuxbEhWjgA0jrsu9i6nGUr8j-YrLQypWdBCo3pAtxYLMmwlMYxteR1V6Z6FEqXV6WaIf8TQMQX4ow0mspyPqCkoZAprmRLDQk=w852-h480-no?authuser=1", 
-          "OPEN": null,
-          "SAVINGS": "10% Discount",
-          "SPOTSLEFT": "40 Spots Left",
-          "UTILITY": "Utility: PSEG",
-          "NOTES": ["System Size: 2,500 kW, ",
-                    "Contract Duration: 3-5 years, ", 
-                    "Cancellation: no termination fees, ", 
-                    "Your carbon offset: 3,387 tons, ", 
-                    "Estimated annual savings: $238, "],
-          
-          "CREATED_DA": null
-        },
+          "LOCATION": "Hoboken, NJ"        },
         "geometry": {
           "type": "Point",
           "coordinates": [-74.025208, 40.744732]
@@ -54,20 +32,7 @@
         "properties": {
           "PROJECT_ID": 3,
           "NAME": "Walmart Solar",
-          "SAVINGS": "10% Discount",
-          "LOCATION": "Bayonne, NJ",
-          "SPOTSLEFT": "40 Spots Left",
-          "UTILITY": "Utility: PSEG",
-          "ADDRESS": "1 Crossing Way, Bayonne, NJ 07002",
-          "IMAGE": "https://images.squarespace-cdn.com/content/v1/5223f925e4b02f25c1dc75df/1576122208794-Q3AN7DZHXNH50RNAXI4F/ke17ZwdGBToddI8pDm48kA8OHtqHjQ9gYIreuFB3lrwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhgb8oQmvBlPjkLJ-8A7pJNmoUVr7-vGB5fHg8rmz_2noRwB-dUGsSquCnVTFQcaRg/Solar-Panels-city-scape.jpg?format=2500w", 
-          "OPEN": null,
-          "NOTES": ["System Size: 2,500 kW, ",
-            "Contract Duration: 3-5 years, ", 
-            "Cancellation: no termination fees, ", 
-            "Your carbon offset: 3,387 tons, ", 
-            "Estimated annual savings: $238, "],
-          "CREATED_DA": null
-        },
+          "LOCATION": "Bayonne, NJ"        },
         "geometry": {
           "type": "Point",
           "coordinates": [-74.107330, 40.660118]
@@ -78,17 +43,7 @@
         "properties": {
           "PROJECT_ID": 4,
           "NAME": "Ducks in the Sun",
-          "LOCATION": "Hoboken, NJ",
-          "ADDRESS": "1 Castle Point Terrace, Hobooken, NJ 07030",
-          "IMAGE": "https://lh3.googleusercontent.com/pw/ACtC-3dNewsVRW8DJD5V1LjvdnvyQJRHVt8OnwczWikcudVzHOvmQf6E_gfuxbEhWjgA0jrsu9i6nGUr8j-YrLQypWdBCo3pAtxYLMmwlMYxteR1V6Z6FEqXV6WaIf8TQMQX4ow0mspyPqCkoZAprmRLDQk=w852-h480-no?authuser=1", 
-          "OPEN": null,
-          "SAVINGS": "10% Discount",
-          "SPOTSLEFT": "40 Spots Left",
-          "UTILITY": "Utility: PSEG",
-  
-          
-          "CREATED_DA": null
-        },
+          "LOCATION": "Hoboken, NJ"        },
         "geometry": {
           "type": "Point",
           "coordinates": [-74.025208, 40.744732]
@@ -99,15 +54,7 @@
         "properties": {
           "PROJECT_ID": 6,
           "NAME": "Community Project",
-          "LOCATION": "Jersey City, NJ",
-          "ADDRESS": "20 Liberty Avenue, Jersey City, NJ 07069",
-          "IMAGE": "https://images.squarespace-cdn.com/content/v1/5223f925e4b02f25c1dc75df/1576122208794-Q3AN7DZHXNH50RNAXI4F/ke17ZwdGBToddI8pDm48kA8OHtqHjQ9gYIreuFB3lrwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhgb8oQmvBlPjkLJ-8A7pJNmoUVr7-vGB5fHg8rmz_2noRwB-dUGsSquCnVTFQcaRg/Solar-Panels-city-scape.jpg?format=2500w",
-          "OPEN": null,
-          "SAVINGS": "10% Discount",
-          "SPOTSLEFT": "40 Spots Left",
-          "UTILITY": "Utility: PSEG",
-          "CREATED_DA": null
-        },
+          "LOCATION": "Jersey City, NJ"        },
         "geometry": {
           "type": "Point",
           "coordinates": [-74.056398, 40.701487]
@@ -118,15 +65,7 @@
         "properties": {
           "PROJECT_ID": 6,
           "NAME": "Community Project",
-          "LOCATION": "Jersey City, NJ",
-          "ADDRESS": "20 Liberty Avenue, Jersey City, NJ 07069",
-          "IMAGE": "https://sandeeresearch.files.wordpress.com/2015/03/solar-panel.jpg",
-          "OPEN": null,
-          "SAVINGS": "10% Discount",
-          "SPOTSLEFT": "40 Spots Left",
-          "UTILITY": "Utility: PSEG",
-          "CREATED_DA": null
-        },
+          "LOCATION": "Jersey City, NJ"        },
         "geometry": {
           "type": "Point",
           "coordinates": [-74.056398, 40.701487]

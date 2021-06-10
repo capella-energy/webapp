@@ -12,6 +12,17 @@
 
 .marker-container {
   margin: 0 0 0 0;
+  text-align: center;
+  padding: 15px;
+  color: #01203a;
+}
+
+#markerName {
+  font-weight: 600;
+}
+.marker-container button {
+  padding: 10px 15px;
+  margin-top: 4px;
 }
 
 .gm-style-iw-d {
@@ -19,7 +30,7 @@
 }
 
 .gm-style-iw {
-  padding: 0px 0 10px 0 !important;
+  padding: 0 0 0 0 !important;
 }
 
 #map {
@@ -32,16 +43,9 @@
   visibility: hidden;
 }
 
-#markerImg {
-  max-width: 100%;
-  padding-bottom: 10px;
-}
-
-#markerPP,
 #markerName,
 #markerAddress {
   max-width: 100%;
-  margin: 0px 10px 5px 10px;
 }
 
 h2 {
