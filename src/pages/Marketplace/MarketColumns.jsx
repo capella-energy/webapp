@@ -2,6 +2,7 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 import "./MarketColumns.css"
+import { Link } from "react-router-dom"; 
 
 import firebase from "firebase"; 
 const db = firebase.firestore();
@@ -21,7 +22,8 @@ class MarketColumns extends React.Component {
           snapshot.forEach((doc) => (
               this.setState((prevState) => ({
                   projects: [...prevState.projects, {
-                      ID: doc.Key,
+                      ID: doc.data().Key,
+                      projID: doc.data().projID,
                       Availability: doc.data().Availability,
                       Coordinates: doc.data().Coordinates,
                       ImageURL: doc.data().ImageURL,
@@ -59,7 +61,7 @@ class MarketColumns extends React.Component {
                   Utility: <span> </span>
                       {p.Utility}
                   </Card.Text>
-                  <button>Subscribe</button>
+                  <Link to={`/marketplace/${p.projID}`}><button>Subscribe</button></Link>
                   </div>
                 </Card.Body>   
               </Card>

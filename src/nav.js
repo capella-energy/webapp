@@ -14,6 +14,7 @@ import Properties from "./pages/Survey/Properties";
 import UtilityData from "./pages/Survey/UtilityData";
 import Dashboard from "./pages/Dashboard";
 import Completion from "./pages/Survey/Completion";
+import ProjectDetails from "./pages/Marketplace/ProjectDetails";
 
 function Nav() {
   return (
@@ -22,6 +23,7 @@ function Nav() {
         <Switch>
           <PrivateRoute exact path="/" component={Dashboard} />
           <PrivateRoute path="/learn" component={Learn} />
+          <PrivateRoute path="/marketplace/:id" component={ProjectDetails} />
           <PrivateRoute path="/marketplace" component={Marketplace} />
 
           <Container className="login-container">
