@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import firebase from 'firebase'; 
 import "./ProjectDetails.css";
-import Navbar from "../Navbar/Navbar";
 
 
 const db = firebase.firestore();
@@ -15,12 +14,7 @@ class ProjectDetails extends Component {
         projectLocation: ""
       }
     
-
-    handleSubmit = () => {
-
-    };
-
-    render() { 
+    componentDidMount = () => {
         const selectedProj = this.props.match.params.id
         var docRef = db.collection("Projects").doc(selectedProj);
 
@@ -30,6 +24,11 @@ class ProjectDetails extends Component {
                 projectLocation: doc.data().Location
               })
         })
+    }
+
+    
+
+    render() { 
    
         return (
             <div className="projDetailsPage"> 
