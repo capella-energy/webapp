@@ -1,3 +1,29 @@
 body {
   background-color: #f7f8fc;
 }
+
+.detailedIMG {
+  height: 460px;
+  width: 400px;
+}
+
+.sampleBill {
+  background-color: rgb(197, 197, 197);
+  padding: 150px 150px 150px 150px;
+}
+
+.oldBill,
+.newBill {
+  background-color: white;
+}
+
+.projectDetailsSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 125px 125px 125px 125px;
+}
+
+.sampleBillRow {
+  display: flex;
+  justify-content: space-around;
+}

@@ -24,7 +24,7 @@ import {
 } from "@reach/combobox";
 import * as FaIcons from "react-icons/fa";   
 
-const API_KEY = "AIzaSyCYtOMyY2cyh4RFwtoDtQmXLjWCbfIMx3c"; 
+const API_KEY = "AIzaSyBawcqAK6VVEhjll05YASsIrt9wDoMXppg"; 
 const libraries = ["places"];
 const mapContainerStyle = {
   height: "100vh",
