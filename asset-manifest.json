@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/webapp/static/css/main.6ba12b71.chunk.css",
+    "main.css": "/webapp/static/css/main.eb2d0427.chunk.css",
     "main.js": "/webapp/static/js/main.060ad19a.chunk.js",
     "main.js.map": "/webapp/static/js/main.060ad19a.chunk.js.map",
     "runtime-main.js": "/webapp/static/js/runtime-main.183fcf9c.js",
@@ -10,7 +10,7 @@
     "static/js/2.d147e12d.chunk.js.map": "/webapp/static/js/2.d147e12d.chunk.js.map",
     "index.html": "/webapp/index.html",
     "static/css/2.2467496b.chunk.css.map": "/webapp/static/css/2.2467496b.chunk.css.map",
-    "static/css/main.6ba12b71.chunk.css.map": "/webapp/static/css/main.6ba12b71.chunk.css.map",
+    "static/css/main.eb2d0427.chunk.css.map": "/webapp/static/css/main.eb2d0427.chunk.css.map",
     "static/js/2.d147e12d.chunk.js.LICENSE.txt": "/webapp/static/js/2.d147e12d.chunk.js.LICENSE.txt",
     "static/media/login.css": "/webapp/static/media/brook7.a35987ab.png",
     "static/media/progress.3490dfe7.svg": "/webapp/static/media/progress.3490dfe7.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.183fcf9c.js",
     "static/css/2.2467496b.chunk.css",
     "static/js/2.d147e12d.chunk.js",
-    "static/css/main.6ba12b71.chunk.css",
+    "static/css/main.eb2d0427.chunk.css",
     "static/js/main.060ad19a.chunk.js"
   ]
 }
