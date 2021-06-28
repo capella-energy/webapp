@@ -5,10 +5,50 @@ body {
 .detailedIMG {
   height: 460px;
   width: 400px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.projectDetailsSection {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+  align-items: center;
+}
+
+.projDetails ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.projDetails li {
+  display: flex;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.detailTxt {
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+.detailSVG {
+  transform: translateY(2px);
+  font-size: 1.4rem;
+}
+.detailTitle {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sampleBillRow {
+  display: flex;
+  justify-content: space-around;
 }
 
 .sampleBill {
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(240, 240, 240);
   padding: 150px 150px 150px 150px;
 }
 
@@ -17,13 +57,34 @@ body {
   background-color: white;
 }
 
-.projectDetailsSection {
-  display: flex;
-  justify-content: space-around;
-  padding: 125px 125px 125px 125px;
+@media screen and (max-width: 480px) {
+  .projectDetailsSection {
+    display: grid;
+    padding: 20px 10px;
+  }
+  .detailedIMG {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 
-.sampleBillRow {
-  display: flex;
-  justify-content: space-around;
+@media screen and (max-width: 768px) {
+  .projectDetailsSection {
+    display: grid;
+    padding: 20px 10px;
+  }
+  .detailedIMG {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projectDetailsSection {
+    justify-content: space-around;
+    padding: 50px 30px;
+  }
+  .detailedIMG {
+    margin-bottom: 30px;
+  }
 }

@@ -1,6 +1,7 @@
 import React, { Component, useEffect } from 'react';
 import firebase from 'firebase'; 
 import "./ProjectDetails.css";
+import * as FaIcons from "react-icons/fa";
 
 const db = firebase.firestore();
 
@@ -17,6 +18,7 @@ class ProjectDetails extends Component {
         projectAvailability: "", 
         projectDescription: "", 
         projectSavings: "", 
+        projectUtility: ""
       }
     
     componentDidMount = () => {
@@ -33,6 +35,7 @@ class ProjectDetails extends Component {
                 projectAvailability: doc.data().Availability,
                 projectDescription: doc.data().Description,
                 projectSavings: doc.data().Savings, 
+                projectUtility: doc.data().Utility
               })
         })
     }
@@ -50,11 +53,14 @@ class ProjectDetails extends Component {
                   <img className="detailedIMG"src={this.state.projectImageURL} alt="project"/>
                 </div>
                 <div className="projDetails"  >
-                  <h3>{this.state.projectName}</h3>
-                  <h3>{this.state.projectLocation}</h3>
-                  <h3>{this.state.projectAvailability}</h3> 
-                  <h3>{this.state.projectDescription}</h3>
-                  <h5>{this.state.projectSavings}</h5>
+                  <h3 className="detailTitle">{this.state.projectName}</h3>
+                  <ul>
+                    <li><FaIcons.FaMapMarkerAlt className="detailSVG"/><h3 className="detailTxt"><strong>Location</strong> <br/> {this.state.projectLocation}</h3></li>
+                    <li><FaIcons.FaBolt className="detailSVG"/> <h3 className="detailTxt"><strong>Utility</strong> <br/>{this.state.projectUtility}</h3> </li>
+                    <li><FaIcons.FaChartPie className="detailSVG"/> <h3 className="detailTxt"><strong>Availability</strong> <br/>{this.state.projectAvailability}</h3> </li>
+                    <li><FaIcons.FaFileInvoiceDollar className="detailSVG"/><h3 className="detailTxt"><strong>Savings</strong> <br/>{this.state.projectSavings}</h3></li>
+                    <li><FaIcons.FaInfoCircle className="detailSVG"/><h3 className="detailTxt"><strong>More Info</strong> <br/> {this.state.projectDescription}</h3></li>
+                  </ul>
                 </div>
               </div>   
             </div>
