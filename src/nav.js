@@ -15,6 +15,7 @@ import UtilityData from "./pages/Survey/UtilityData";
 import Dashboard from "./pages/Dashboard";
 import Completion from "./pages/Survey/Completion";
 import ProjectDetails from "./pages/Marketplace/ProjectDetails";
+import ComingSoon from "./pages/Survey/ComingSoon";
 
 function Nav() {
   return (
@@ -32,6 +33,7 @@ function Nav() {
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
               <PrivateRoute path="/properties" component={Properties} />
+              <PrivateRoute path="/comingsoon" component={ComingSoon} />
               <PrivateRoute path="/connect-utility" component={UtilityData} />
               <PrivateRoute path="/complete" component={Completion} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />

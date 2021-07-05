@@ -15,6 +15,7 @@ body {
   justify-content: space-evenly;
   padding: 100px;
   align-items: center;
+  min-height: 100vh;
 }
 
 .projDetails ul {
