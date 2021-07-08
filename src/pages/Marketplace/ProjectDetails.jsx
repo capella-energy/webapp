@@ -68,10 +68,28 @@ class ProjectDetails extends Component {
             <div className="sampleBill"> 
               <div className="sampleBillRow">
                 <div className="oldBill">
-                  <h3>Hello</h3>
+                  <h3>Old Bill</h3>
+                  <h5>Total Charges: $100.00</h5>
+                  <h5>Credits: -$0.00</h5>
+                 <hr></hr>
+                  <h5>Amount Due: $100.00</h5>
+              </div>
+              
+              
+              <div className="newBill"  >
+                  <h3>New Bill</h3>
+                  <h5>Total Charges: $100.00</h5>
+                  <h5>Credits: -$100.00</h5>
+                  <hr></hr>
+                  <h5>Amount Due: $0.00</h5>
               </div>
               <div className="newBill"  >
-                <h3>Hello</h3> 
+                  <h3>Capella Bill</h3>
+                  <h5>Generated: 1000 kWh</h5>
+                  <h5>Credits: $100.00</h5>
+                  <h5>Discount: -$10.00</h5>
+                  <hr></hr>
+                  <h5>Amount Due: $90.00</h5>
               </div>
               </div>
             </div>

@@ -5,7 +5,6 @@ import "firebase/auth";
 import "./Survey.css"
 import "../Login/login.css"
 
-
 const db = firebase.firestore();
 
 const ComingSoon = () => {

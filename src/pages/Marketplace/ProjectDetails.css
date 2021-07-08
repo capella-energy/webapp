@@ -16,6 +16,11 @@ body {
   padding: 100px;
   align-items: center;
   min-height: 100vh;
+  color: #01203a;
+}
+
+.projDetails {
+  min-width: 50%;
 }
 
 .projDetails ul {
@@ -45,7 +50,8 @@ body {
 
 .sampleBillRow {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  color: #01203a;
 }
 
 .sampleBill {
@@ -56,8 +62,28 @@ body {
 .oldBill,
 .newBill {
   background-color: white;
+  padding: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 9px !important;
+  min-width: 31%;
 }
 
+.oldBill {
+  margin-right: 35px;
+}
+
+.oldBill h5,
+.newBill h5 {
+  font-size: smaller;
+  font-weight: 600;
+}
+
+.oldBill h3,
+.newBill h3 {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
 @media screen and (max-width: 480px) {
   .projectDetailsSection {
     display: grid;
@@ -66,6 +92,13 @@ body {
   .detailedIMG {
     margin-bottom: 30px;
     margin-right: 0;
+  }
+
+  .sampleBillRow {
+    display: grid;
+  }
+  .sampleBill {
+    padding: 50px 10px;
   }
 }
 
@@ -78,6 +111,12 @@ body {
     margin-bottom: 30px;
     margin-right: 0;
   }
+  .sampleBillRow {
+    display: grid;
+  }
+  .sampleBill {
+    padding: 50px 10px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -87,5 +126,11 @@ body {
   }
   .detailedIMG {
     margin-bottom: 30px;
+  }
+  .sampleBillRow {
+    display: grid;
+  }
+  .sampleBill {
+    padding: 50px 10px;
   }
 }
