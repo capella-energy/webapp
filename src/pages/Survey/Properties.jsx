@@ -11,10 +11,6 @@ const db = firebase.firestore();
 
 const Properties = () => {
   const [name, setName] = useState("");
-  const [addy, setAddy] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState(""); 
-  const [zip, setZip] = useState(""); 
 
   const history = useHistory();
   const [loader, setLoader] = useState(false);  
@@ -27,15 +23,11 @@ const Properties = () => {
       .doc(id)
       .set({
         name: name,
-        addy: addy,
-        city: city, 
-        state: state, 
-        zip: zip, 
         uid: id
       })
       .then(() => {
         setLoader(false);
-        history.push("/connect-utility");
+        history.push("/contact");
       })
       .catch((error) => {
         alert(error.message);
@@ -43,10 +35,6 @@ const Properties = () => {
       });
 
     setName("");
-    setAddy("");
-    setCity(""); 
-    setState(""); 
-    setZip(""); 
   };
 
   return (
@@ -61,39 +49,6 @@ const Properties = () => {
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </Form.Group>
-            <Form.Group data-aos="fade-up" data-aos-duration="900" id="address">
-              <Form.Control
-                placeholder="Address"
-                value={addy}
-                onChange={(e) => setAddy(e.target.value)}
-                required
-              />
-            </Form.Group>
-            <Form.Group data-aos="fade-up" data-aos-duration="1200"  id="city">
-              <Form.Control
-                placeholder="City"
-                value={city}
-                onChange={(e) => setCity(e.target.value)}
-                required
-              />
-            </Form.Group>
-            <Form.Group data-aos="fade-up" data-aos-duration="1300"  id="state">
-              <Form.Control
-                placeholder="State"
-                value={state}
-                onChange={(e) => setState(e.target.value)}
-                required
-              />
-            </Form.Group>
-            <Form.Group data-aos="fade-up" data-aos-duration="1500"  id="zip">
-              <Form.Control
-                type="number"
-                placeholder="Zipcode"
-                value={zip}
-                onChange={(e) => setZip(e.target.value)}
                 required
               />
             </Form.Group>

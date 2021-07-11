@@ -2,6 +2,33 @@ body {
   background-color: #f7f8fc;
 }
 
+.leftThingy {
+  transform: translateY(-1.70px);
+  margin-right: 5px;
+  color: #01203a; 
+}
+
+.theBackButton {
+  margin: 10px 5px;
+  background-color: transparent; 
+  color: #01203a !important; 
+
+}
+
+.theBackButton:hover {
+  margin: 10px 5px;
+  background-color: transparent;
+  color: #01203a !important; 
+  transform: translateY(-5px);
+}
+
+.theBackButton:active {
+  margin: 10px 5px;
+  background-color: transparent;
+  color: #01203a !important; 
+  transform: translateY(-5px);
+}
+
 .detailedIMG {
   height: 460px;
   width: 400px;

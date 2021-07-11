@@ -9,6 +9,7 @@
         "type": "Project",
         "properties": {
           "PROJECT_ID": 1,
+          "projID": "Project 1",
           "NAME": "Liberty Solar Project",
           "LOCATION": "Jersey City, NJ"        },
         "geometry": {
@@ -20,6 +21,7 @@
         "type": "Project",
         "properties": {
           "PROJECT_ID": 2,
+          "projID": "Project 2",
           "NAME": "Ducks in the Sun",
           "LOCATION": "Hoboken, NJ"        },
         "geometry": {
@@ -31,6 +33,7 @@
         "type": "Project",
         "properties": {
           "PROJECT_ID": 3,
+          "projID": "Project 3",
           "NAME": "Walmart Solar",
           "LOCATION": "Bayonne, NJ"        },
         "geometry": {
@@ -42,28 +45,32 @@
         "type": "Project",
         "properties": {
           "PROJECT_ID": 4,
-          "NAME": "Ducks in the Sun",
-          "LOCATION": "Hoboken, NJ"        },
+          "projID": "Project 4",
+          "NAME": "Brooklyn Solar",
+          "LOCATION": "Hoboken, NJ"      
+          },
         "geometry": {
           "type": "Point",
-          "coordinates": [-74.025208, 40.744732]
+          "coordinates": [-70.766, 40.660118]
+        }
+      },
+      {
+        "type": "Project",
+        "properties": {
+          "PROJECT_ID": 5,
+          "projID": "Project 5",
+          "NAME": "NYC Solar",
+          "LOCATION": "Brooklyn, NY"        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9969, 40.7061]
         }
       },
       {
         "type": "Project",
         "properties": {
           "PROJECT_ID": 6,
-          "NAME": "Community Project",
-          "LOCATION": "Jersey City, NJ"        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-74.056398, 40.701487]
-        }
-      },
-      {
-        "type": "Project",
-        "properties": {
-          "PROJECT_ID": 6,
+          "projID": "Project 6",
           "NAME": "Community Project",
           "LOCATION": "Jersey City, NJ"        },
         "geometry": {

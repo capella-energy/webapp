@@ -1,7 +1,9 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component } from 'react';
 import firebase from 'firebase'; 
 import "./ProjectDetails.css";
 import * as FaIcons from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Info from "./ProjectForm"; 
 
 const db = firebase.firestore();
 
@@ -48,6 +50,7 @@ class ProjectDetails extends Component {
         return (
           <>
             <div>
+            <Link to={`/marketplace`}><button className="theBackButton"><FaIcons.FaChevronLeft className="leftThingy"/>Back</button></Link>
               <div className="projectDetailsSection">
                 <div className="projectImg" >
                   <img className="detailedIMG"src={this.state.projectImageURL} alt="project"/>
@@ -64,6 +67,8 @@ class ProjectDetails extends Component {
                 </div>
               </div>   
             </div>
+
+          {/* Bill */}
 
             <div className="sampleBill"> 
               <div className="sampleBillRow">
@@ -92,6 +97,7 @@ class ProjectDetails extends Component {
                   <h5>Amount Due: $90.00</h5>
               </div>
               </div>
+              <Info />
             </div>
           </>     
           ); 

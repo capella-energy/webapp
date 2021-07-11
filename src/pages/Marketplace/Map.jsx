@@ -1,8 +1,8 @@
 import React from "react"; 
 import './Marketplace.css'; 
 import mapStyles from "./mapStyles"; 
-import * as projectData from "./solar-projects.json"; 
-import firebase from "firebase";
+import * as projectData from "./solar-projects.json";  
+import { Link } from "react-router-dom"; 
 
 import {
   GoogleMap,
@@ -125,7 +125,7 @@ export default function Map() {
               <div className="marker-container">
                 <h3 id="markerName">{selectedProject.properties.NAME}</h3>
                 <h4 id="markerAddress">{selectedProject.properties.LOCATION}</h4>
-                <button>View Project</button>
+                <Link to={`/marketplace/${selectedProject.properties.projID}`}><button>View Project</button></Link>
              
               </div>
             </InfoWindow>)}
