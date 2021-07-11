@@ -1,4 +1,4 @@
-.form-container {
+.login-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,29 +40,27 @@
     color: rgba(15, 14, 14, 0.322) !important;
   }
   
-  .links {
-    color: #e89c35 !important;
-    font-family: "Montserrat" !important;
-    font-weight: 500;
-  }
-  
-  .btn-primary {
+  .submitForm {
     border-radius: 30px !important;
-    background-color: #01203a !important;
+    background: #01203a !important;
     padding: 0.49rem 0.75rem !important;
     border: 0 !important;
     color: white !important;
     font-family: "Montserrat" !important;
     font-size: 0.8571em;
     font-weight: 400 !important;
+    align-items: center;
+    display: flex;
+    align-content: center;
   }
   
-  .btn-primary:hover {
-    background-color: #01203ace !important;
+  .submitForm:hover {
+    background: #01203ace !important;
   }
   
-  .text-center {
+  .formInstruct {
     color: #01203a !important;
     font-family: "Montserrat" !important;
+    text-align: center !important;
   }
   
