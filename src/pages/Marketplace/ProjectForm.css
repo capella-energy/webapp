@@ -50,8 +50,19 @@
     font-size: 0.8571em;
     font-weight: 400 !important;
     align-items: center;
-    display: flex;
     align-content: center;
+    display: flex; 
+    text-align: center;
+  }
+
+  .submitFormBtn{
+    color: white !important;
+    font-family: "Montserrat" !important;
+    font-size: 0.8571em;
+    font-weight: bold;
+    font-weight: 400 !important;
+    display: flex; 
+    text-align: center !important;
   }
   
   .submitForm:hover {

@@ -97,7 +97,7 @@ const Info = () => {
                 required
               />
             </Form.Group>
-            <Link to={`/success`}><button className="submitForm">Submit</button></Link>
+            <Link className="submitForm" to={`/success`}><h3 className="submitFormBtn">Submit</h3></Link>
           </Form>
         </Card.Body>
       </Card>
