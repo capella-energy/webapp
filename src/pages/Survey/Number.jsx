@@ -13,6 +13,8 @@ const db = firebase.firestore();
 
 const Number = () => {
 
+  const id = firebase.auth().currentUser.uid;
+ 
   const [Number, setNumber] = useState("");
 
 
@@ -23,11 +25,10 @@ const Number = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
-    const id = firebase.auth().currentUser.uid;
     db.collection("Users")
       .doc(id)
       .update({
-        Number: Number, 
+        Number: Number 
 
       })
       .then(() => {
@@ -38,7 +39,7 @@ const Number = () => {
         alert(error.message);
         setLoader(false);
       });
-
+ 
     setNumber("");
    
   };

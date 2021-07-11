@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { Form, Button, Card } from "react-bootstrap"; 
 import firebase from "firebase"; 
 import { useHistory } from "react-router-dom";
+import "./ProjectForm.css"; 
 import "firebase/auth";
 
 const db = firebase.firestore();
 
-const Info = () => {
-  const [name, setName] = useState("");
+const Info = () => { 
+
+
+  const id = firebase.auth().currentUser.uid;
+
   const [addy, setAddy] = useState("");
   const [city, setCity] = useState("");
   const [state, setState] = useState(""); 
@@ -20,7 +24,6 @@ const Info = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
-    const id = firebase.auth().currentUser.uid;
     db.collection("Users")
       .doc(id)
       .set({
@@ -28,7 +31,6 @@ const Info = () => {
         city: city, 
         state: state, 
         zip: zip, 
-        uid: id, 
         utility: utility
       })
       .then(() => {
@@ -40,7 +42,6 @@ const Info = () => {
         setLoader(false);
       });
 
-    setName("");
     setAddy("");
     setCity(""); 
     setState(""); 
@@ -52,7 +53,7 @@ const Info = () => {
     <>
       <Card >
         <Card.Body>
-          <h2 data-aos="fade-up" data-aos-duration="800"  className="text-center mb-4">Let's Get to Know You Better</h2>
+          <h2 data-aos="fade-up" data-aos-duration="800"  className="text-center mb-4">Provide Us With The Following to Get Started!</h2>
           <Form onSubmit={handleSubmit}>
             <Form.Group data-aos="fade-up" data-aos-duration="900" id="address">
               <Form.Control

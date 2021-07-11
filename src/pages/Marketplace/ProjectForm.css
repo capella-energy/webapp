@@ -1,0 +1,68 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .inner-container {
+    min-width: 350px;
+  }
+  
+  .card {
+    background-color: transparent !important;
+    border: 0 !important;
+  }
+  
+  .form-control {
+    border-radius: 30px !important;
+    background-color: white !important;
+    border: 0 !important;
+    padding: 1.25rem 0.75rem !important;
+  }
+  
+  .form-control:focus {
+    background: white !important;
+  }
+  
+  input,
+  ::placeholder {
+    color: #01203a !important;
+    font-family: "Montserrat" !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+  }
+  
+  ::placeholder {
+    color: rgba(15, 14, 14, 0.322) !important;
+  }
+  
+  .links {
+    color: #e89c35 !important;
+    font-family: "Montserrat" !important;
+    font-weight: 500;
+  }
+  
+  .btn-primary {
+    border-radius: 30px !important;
+    background-color: #01203a !important;
+    padding: 0.49rem 0.75rem !important;
+    border: 0 !important;
+    color: white !important;
+    font-family: "Montserrat" !important;
+    font-size: 0.8571em;
+    font-weight: 400 !important;
+  }
+  
+  .btn-primary:hover {
+    background-color: #01203ace !important;
+  }
+  
+  .text-center {
+    color: #01203a !important;
+    font-family: "Montserrat" !important;
+  }
+  
