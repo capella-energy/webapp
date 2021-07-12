@@ -11,50 +11,58 @@
   .inner-container {
     min-width: 350px;
   }
+
+  input.littleForm::placeholder {
+     color: #5252527e !important; 
+  }
+
+  input.littleForm:active {
+    border: none !important; 
+ }
   
-  .card {
+  .blm {
     background-color: transparent !important;
     border: 0 !important;
   }
   
-  .form-control {
-    border-radius: 30px !important;
-    background-color: white !important;
-    border: 0 !important;
-    padding: 1.25rem 0.75rem !important;
+  .littleForm {
+      background-color: rgba(199, 199, 199, 0.411) !important;
+      color: #01203a !important; 
+      
   }
-  
-  .form-control:focus {
-    background: white !important;
-  }
-  
-  .submitForm {
+
+  #submitForm.btn {
     border-radius: 30px !important;
     background: #01203a !important;
     padding: 0.49rem 0.75rem !important;
     border: 0 !important;
     color: white !important;
     font-family: "Montserrat" !important;
-    font-size: 0.8571em;
+    font-size: 0.8571em !important; 
     font-weight: 400 !important;
-    align-items: center;
-    align-content: center;
-    display: flex; 
-    text-align: center;
+    align-items: center !important;
+    align-content: center !important;
+    display: flex !important; 
+    text-align: center !important;
+    background-size: cover;
+    background-position: center;
+    width: 75.7vw;
+    justify-content: center;
   }
 
-  .submitFormBtn{
-    color: white !important;
-    font-family: "Montserrat" !important;
-    font-size: 0.8571em;
-    font-weight: bold;
-    font-weight: 400 !important;
-    display: flex; 
-    text-align: center !important;
+  #submitForm.btn.btn-primary {
+      
+      align-self: center !important;
+      
   }
   
-  .submitForm:hover {
+  #submitForm.btn:hover {
     background: #01203ace !important;
+    border: none !important;
+  }
+
+  #submitForm.btn:active {
+    border: none !important;
   }
   
   .formInstruct {
