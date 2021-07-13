@@ -48,7 +48,7 @@ class ProjectDetails extends Component {
       
    
         return (
-          <>
+          <div className="projectDetailsPage">
             <div>
             <Link to={`/marketplace`}><button className="theBackButton"><FaIcons.FaChevronLeft className="leftThingy"/>Back</button></Link>
               <div className="projectDetailsSection">
@@ -69,6 +69,8 @@ class ProjectDetails extends Component {
             </div>
 
           {/* Bill */}
+
+          <h6 className="formTitle">How you save with Capella</h6>
 
             <div className="sampleBill"> 
               <div className="sampleBillRow">
@@ -97,9 +99,11 @@ class ProjectDetails extends Component {
                   <h5>Amount Due: $90.00</h5>
               </div>
               </div>
-              <Info />
+             
             </div>
-          </>     
+            <h6 className="formTitle">Subscribe to Community Solar with <strong>{this.state.projectName}</strong></h6>
+            <Info />
+          </div>     
           ); 
     }
 }

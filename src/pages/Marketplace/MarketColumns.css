@@ -43,12 +43,13 @@
   font-size: smaller;
   transform: translateY(-5px);
   outline: none;
-  color: #01203a;
+  color: white;
+  background: #01203a !important;
 }
 
 .marketCardBody Button:hover,
 button:focus {
-  background-color: #01203a;
+  background: #01203ace !important;
   color: white;
   outline: none;
 }

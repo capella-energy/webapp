@@ -53,9 +53,9 @@ const Info = () => {
     <>
       <Card className="blm">
         <Card.Body>
-          <h2 data-aos="fade-up" data-aos-duration="800"  className="formInstruct">Provide Us With The Following to Get Started!</h2>
+          <h6  className="formInstruct">Provide us with some details and we'll get you signed up!</h6>
           <Form className="projectForm" onSubmit={handleSubmit}>
-            <Form.Group data-aos="fade-up" data-aos-duration="900" id="address">
+            <Form.Group id="address">
               <Form.Control
                 className="littleForm"
                 placeholder="Address"
@@ -64,7 +64,7 @@ const Info = () => {
                 required
               />
             </Form.Group>
-            <Form.Group data-aos="fade-up" data-aos-duration="1200"  id="city">
+            <Form.Group  id="city">
               <Form.Control
                 className="littleForm"
                 placeholder="City"
@@ -73,7 +73,7 @@ const Info = () => {
                 required
               />
             </Form.Group>
-            <Form.Group data-aos="fade-up" data-aos-duration="1300"  id="state">
+            <Form.Group   id="state">
               <Form.Control
                 className="littleForm"
                 placeholder="State"
@@ -82,7 +82,7 @@ const Info = () => {
                 required
               />
             </Form.Group>
-            <Form.Group data-aos="fade-up" data-aos-duration="1500"  id="zip">
+            <Form.Group   id="zip">
               <Form.Control
                 className="littleForm"
                 type="number"
@@ -92,7 +92,7 @@ const Info = () => {
                 required
               />
             </Form.Group>
-            <Form.Group data-aos="fade-up" data-aos-duration="1500"  id="zip">
+            <Form.Group  id="zip">
               <Form.Control
                 className="littleForm"
                 type="number"
@@ -102,7 +102,7 @@ const Info = () => {
                 required
               />
             </Form.Group>
-            <Button data-aos="fade-up" data-aos-duration="1700"
+            <Button 
                 id="submitForm" to={`/success`}>Submit
             </Button>
           </Form>

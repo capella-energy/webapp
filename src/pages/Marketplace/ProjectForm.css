@@ -1,73 +1,91 @@
 .login-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    min-width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .inner-container {
-    min-width: 350px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
 
-  input.littleForm::placeholder {
-     color: #5252527e !important; 
-  }
+.inner-container {
+  min-width: 350px;
+}
 
-  input.littleForm:active {
-    border: none !important; 
- }
-  
+input.littleForm::placeholder {
+  color: #5252527e !important;
+  outline: none !important;
+}
+
+input.littleForm:active {
+  border: none !important;
+  outline: none !important;
+}
+
+.blm {
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 0 250px 100px 250px;
+}
+
+.littleForm {
+  background-color: rgba(199, 199, 199, 0.411) !important;
+
+  color: #01203a !important;
+}
+
+#submitForm.btn {
+  border-radius: 30px !important;
+  background: #01203a !important;
+  padding: 0.65rem 1rem !important;
+  border: 0 !important;
+  color: white !important;
+  font-size: 0.8571em !important;
+  font-weight: 400 !important;
+  align-items: center !important;
+  align-content: center !important;
+  display: flex !important;
+  text-align: center !important;
+  background-size: cover;
+  background-position: center;
+
+  justify-content: center;
+}
+
+#submitForm.btn.btn-primary {
+  align-self: center !important;
+}
+
+#submitForm.btn:hover {
+  background: #01203ace !important;
+  border: none !important;
+}
+
+#submitForm.btn:active {
+  border: none !important;
+}
+
+.formInstruct {
+  color: #01203a !important;
+  font-family: "Montserrat" !important;
+  text-align: center !important;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 480px) {
   .blm {
-    background-color: transparent !important;
-    border: 0 !important;
+    padding: 0 10px 30px 10px;
   }
-  
-  .littleForm {
-      background-color: rgba(199, 199, 199, 0.411) !important;
-      color: #01203a !important; 
-      
-  }
+}
 
-  #submitForm.btn {
-    border-radius: 30px !important;
-    background: #01203a !important;
-    padding: 0.49rem 0.75rem !important;
-    border: 0 !important;
-    color: white !important;
-    font-family: "Montserrat" !important;
-    font-size: 0.8571em !important; 
-    font-weight: 400 !important;
-    align-items: center !important;
-    align-content: center !important;
-    display: flex !important; 
-    text-align: center !important;
-    background-size: cover;
-    background-position: center;
-    width: 75.7vw;
-    justify-content: center;
+@media screen and (max-width: 768px) {
+  .blm {
+    padding: 0 10px 30px 10px;
   }
+}
 
-  #submitForm.btn.btn-primary {
-      
-      align-self: center !important;
-      
+@media screen and (max-width: 900px) {
+  .blm {
+    padding: 0 30px 30px 30px;
   }
-  
-  #submitForm.btn:hover {
-    background: #01203ace !important;
-    border: none !important;
-  }
-
-  #submitForm.btn:active {
-    border: none !important;
-  }
-  
-  .formInstruct {
-    color: #01203a !important;
-    font-family: "Montserrat" !important;
-    text-align: center !important;
-  }
-  
+}

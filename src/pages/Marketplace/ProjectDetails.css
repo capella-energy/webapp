@@ -1,38 +1,38 @@
-body {
+.projectDetailsPage {
   background-color: #f7f8fc;
 }
 
 .leftThingy {
-  transform: translateY(-1.70px);
+  transform: translateY(-1.7px);
   margin-right: 5px;
-  color: #01203a; 
+  color: #01203a;
 }
 
 .theBackButton {
   margin: 10px 5px;
-  background-color: transparent; 
-  color: #01203a !important; 
-
+  background-color: transparent;
+  color: #01203a !important;
+  padding: 15px;
 }
 
 .theBackButton:hover {
   margin: 10px 5px;
-  background-color: transparent;
-  color: #01203a !important; 
+  background-color: transparent !important;
+  color: #01203a !important;
   transform: translateY(-5px);
 }
 
 .theBackButton:active {
   margin: 10px 5px;
-  background-color: transparent;
-  color: #01203a !important; 
+  background-color: transparent !important;
+  color: #01203a !important;
   transform: translateY(-5px);
 }
 
 .detailedIMG {
   height: 460px;
   width: 400px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   margin-right: 20px;
 }
@@ -40,7 +40,7 @@ body {
 .projectDetailsSection {
   display: flex;
   justify-content: space-evenly;
-  padding: 100px;
+  padding: 100px 100px 200px 100px;
   align-items: center;
   min-height: 100vh;
   color: #01203a;
@@ -76,28 +76,24 @@ body {
 }
 
 .sampleBillRow {
-  display: flex;
-  justify-content: space-evenly;
   color: #01203a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .sampleBill {
-  background-color: rgb(240, 240, 240);
-  padding: 150px 150px 150px 150px;
+  padding: 30px 150px 200px 150px;
 }
 
 .oldBill,
 .newBill {
   background-color: white;
   padding: 20px;
-  margin-right: 20px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
   border-radius: 9px !important;
+  margin-bottom: 20px;
   min-width: 31%;
-}
-
-.oldBill {
-  margin-right: 35px;
 }
 
 .oldBill h5,
@@ -111,6 +107,13 @@ body {
   font-weight: 600;
   padding-bottom: 10px;
 }
+
+.formTitle {
+  text-align: center;
+  font-size: 25px;
+  padding: 0 100px 0 100px;
+}
+
 @media screen and (max-width: 480px) {
   .projectDetailsSection {
     display: grid;
@@ -121,11 +124,18 @@ body {
     margin-right: 0;
   }
 
-  .sampleBillRow {
-    display: grid;
-  }
   .sampleBill {
     padding: 50px 10px;
+  }
+  .formTitle {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+  }
+
+  .oldBill,
+  .newBill {
+    min-width: 90%;
   }
 }
 
@@ -138,11 +148,18 @@ body {
     margin-bottom: 30px;
     margin-right: 0;
   }
-  .sampleBillRow {
-    display: grid;
-  }
+
   .sampleBill {
     padding: 50px 10px;
+  }
+  .formTitle {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+  }
+  .oldBill,
+  .newBill {
+    min-width: 10%;
   }
 }
 
@@ -155,9 +172,13 @@ body {
     margin-bottom: 30px;
   }
   .sampleBillRow {
-    display: grid;
   }
   .sampleBill {
-    padding: 50px 10px;
+    padding: 50px 30px;
+  }
+  .formTitle {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 30px 0 30px;
   }
 }
