@@ -26,7 +26,7 @@ const Info = () => {
     setLoader(true);
     db.collection("Users")
       .doc(id)
-      .set({
+      .update({
         addy: addy,
         city: city, 
         state: state, 
@@ -103,7 +103,7 @@ const Info = () => {
               />
             </Form.Group>
             <Button 
-                id="submitForm" to={`/success`}>Submit
+                id="submitForm"  type="submit">Submit
             </Button>
           </Form>
         </Card.Body>
