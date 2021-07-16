@@ -3,6 +3,7 @@ import { LineChart, Line,
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
 
+// https://recharts.org/en-US/guide/getting-started
 const data1 = [
     {
       name: 'Page A', uv: 4000, pv: 2400, amt: 2400,
