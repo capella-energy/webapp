@@ -3,6 +3,7 @@ import Navbar from "./Navbar/Navbar";
 import firebase from "firebase";
 import "firebase/auth";
 import SliderComponent from "./Learn/Slider";
+import MyChart from "./Chart";
 
 export default function Dashboard() {
   firebase.auth().onAuthStateChanged(function (user) {
@@ -26,6 +27,7 @@ export default function Dashboard() {
         <h1 className="section-titles">
           Welcome, <span id="userNameField"></span>
         </h1>
+        <MyChart />
         <SliderComponent />
       </div>
     </div>
