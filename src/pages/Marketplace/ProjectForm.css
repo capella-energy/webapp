@@ -33,6 +33,15 @@ input.littleForm:active {
   color: #01203a !important;
 }
 
+.flexBoi {
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+#invisibleOne, #invisibleTwo {
+  display: none;  
+}
+
 #submitForm.btn {
   border-radius: 30px !important;
   background: #01203a !important;

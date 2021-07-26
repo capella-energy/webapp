@@ -12,6 +12,16 @@ body {
   background-color: #f7f8fc;
 }
 
+.graphs {
+  display: flex; 
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.recharts-tooltip-wrapper,  .recharts-tooltip-cursor{
+  background-color: transparent !important;
+}
+
 button {
   -webkit-appearance: none;
   appearance: none;
