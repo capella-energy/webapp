@@ -11,6 +11,7 @@ body {
 .dashPage {
   background-color: #f7f8fc;
   width: 100vw;
+  min-height: 100vh;
 }
 .graphs {
   display: flex;
