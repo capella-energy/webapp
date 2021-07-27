@@ -44,7 +44,7 @@ const data = [
     name: 'Page B', uv: 3000, pv: 1398, amt: 2210,
   },
   {
-    name: 'Page C', uv: 2000, pv: 9800, amt: 2290,
+    name: 'Page C', uv: 2000, pv: 6700, amt: 2290,
   },
   {
     name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
@@ -67,56 +67,45 @@ export default class MyChart extends PureComponent {
     return (
       <>
         <div className="graphs">
-          <div>
+          <div className="chartContainer">
+            <h6 className="chartTitle">Weekly Production & Consumption</h6>
             <BarChart
               className="aBar"
               width={500}
               height={300}
               data={data}
               margin={{
-                top: 5, right: 30, left: 20, bottom: 5,
+                top: 5, right: 20, left: 20, bottom: 0,
               }}
             >
-              {/* <CartesianGrid strokeDasharray="3 3" /> */}
-              {/* <XAxis dataKey="name" /> */}
-              {/* <YAxis /> */}
               <Tooltip />
-              <Legend />
+              <Legend width={100} wrapperStyle={{ top: 30, right: 20,  lineHeight: '40px' }} />
               <Bar dataKey="pv" fill="#01203a" />
               <Bar dataKey="uv" fill="#e89c35" />
             </BarChart>
           </div>
 
-
-
           {/* Right Side */}
-          <div>
+          <div className="chartContainer">
+          <h6 className="chartTitle">Monthly Savings</h6>
             <BarChart
+            className="aBar"
               width={500}
               height={300}
               data={data}
               margin={{
-                top: 5, right: 30, left: 20, bottom: 5,
+                top: 5, right: 20, left: 20, bottom: 0,
               }}
             >
-              {/* <CartesianGrid strokeDasharray="3 3" /> */}
-              {/* <XAxis dataKey="name" /> */}
-              {/* <YAxis /> */}
+             
               <Tooltip />
-              <Legend />
-              <Bar dataKey="pv" fill="#8884d8" />
+              <Legend width={100} wrapperStyle={{ top: 30, right: 0,  lineHeight: '40px' }} />
+              <Bar dataKey="pv" fill="#e89c35" barSize={35}/>
             </BarChart>
           </div>
         </div>
 
 
-        {/* <LineChart width={600} height={300} data={data1} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-          <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-        </LineChart> */}
       </>
     );
   }

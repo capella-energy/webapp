@@ -39,7 +39,7 @@ function Navbar() {
         <Link to="#" className="bars openNav">
           <FaIcons.FaBars onClick={showSidebar}/>
         </Link>
-        <AiIcons.AiFillCloud />
+        
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
     

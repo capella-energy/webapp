@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./Navbar/Navbar";
 import firebase from "firebase";
 import "firebase/auth";
-import SliderComponent from "./Learn/Slider";
 import MyChart from "./Chart";
 
 export default function Dashboard() {
@@ -28,7 +27,6 @@ export default function Dashboard() {
           Welcome, <span id="userNameField"></span>
         </h1>
         <MyChart />
-        <SliderComponent />
       </div>
     </div>
   );
