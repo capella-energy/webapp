@@ -49,7 +49,7 @@ const Properties = () => {
     <>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Let's Get to Know You a Bit Better</h2>
+          <h2 className="text-center mb-4">Let's Get to Know You a Bit Better.</h2>
           <Form onSubmit={handleSubmit}>
             <Form.Group id="name">
               <Form.Control
