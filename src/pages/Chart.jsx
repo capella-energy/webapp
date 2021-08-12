@@ -6,57 +6,53 @@ import {
 import "../assets/Dashboard.css";
 
 // https://recharts.org/en-US/guide/getting-started
-const data1 = [
-  {
-    name: 'Page A', uv: 4000, pv: 2400, amt: 2400,
-  },
-  {
-    name: 'Page B', uv: 3000, pv: 1398, amt: 2210,
-  },
-  {
-    name: 'Page C', uv: 2000, pv: 9800, amt: 2290,
-  },
-  {
-    name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
-  },
-  {
-    name: 'Page E', uv: 1890, pv: 4800, amt: 2181,
-  },
-  {
-    name: 'Page F', uv: 2390, pv: 3800, amt: 2500,
-  },
-  {
-    name: 'Page G', uv: 3490, pv: 4300, amt: 2100,
-  },
-];
 
-const renderLineChart = (
-  <LineChart width={400} height={400} data={data1}>
-    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-  </LineChart>
-);
 
 const data = [
   {
-    name: 'Page A', uv: 4000, pv: 2400, amt: 2400,
+    name: 'Jan', Prod: 4000, Cons: 2400, amt: 2400,
   },
   {
-    name: 'Page B', uv: 3000, pv: 1398, amt: 2210,
+    name: 'Feb', Prod: 3000, Cons: 1398, amt: 2210,
   },
   {
-    name: 'Page C', uv: 2000, pv: 6700, amt: 2290,
+    name: 'Mar', Prod: 2000, Cons: 4700, amt: 2290,
   },
   {
-    name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
+    name: 'Apr', Prod: 2780, Cons: 3908, amt: 2000,
   },
   {
-    name: 'Page E', uv: 1890, pv: 4800, amt: 2181,
+    name: 'May', Prod: 1890, Cons: 4800, amt: 2181,
   },
   {
-    name: 'Page F', uv: 2390, pv: 3800, amt: 2500,
+    name: 'Jun', Prod: 2390, Cons: 3800, amt: 2500,
   },
   {
-    name: 'Page G', uv: 3490, pv: 4300, amt: 2100,
+    name: 'Jul', Prod: 3490, Cons: 4300, amt: 2100,
+  },
+];
+
+const data1 = [
+  {
+    name: 'Jan', uv: 4000, Savings: 2400, amt: 2400,
+  },
+  {
+    name: 'Feb', uv: 3000, Savings: 1398, amt: 2210,
+  },
+  {
+    name: 'Mar', uv: 14000, Savings: 9800, amt: 2290,
+  },
+  {
+    name: 'Apr', uv: 2780, Savings: 3908, amt: 2000,
+  },
+  {
+    name: 'May', uv: 1890, Savings: 4800, amt: 2181,
+  },
+  {
+    name: 'Jun', uv: 2390, Savings: 3800, amt: 2500,
+  },
+  {
+    name: 'Jul', uv: 3490, Savings: 4300, amt: 2100,
   },
 ];
 
@@ -75,13 +71,32 @@ export default class MyChart extends PureComponent {
               height={300}
               data={data}
               margin={{
-                top: 5, right: 20, left: 20, bottom: 0,
+                top: 20, right: 20, left: 20, bottom: 0,
               }}
             >
+              
               <Tooltip />
-              <Legend width={100} wrapperStyle={{ top: 30, right: 20,  lineHeight: '40px' }} />
-              <Bar dataKey="pv" fill="#01203a" />
-              <Bar dataKey="uv" fill="#e89c35" />
+              <Legend width={140} wrapperStyle={{ top: 20, right: 5,  lineHeight: '20px' }} />
+              <XAxis dataKey="name" />
+              <Bar dataKey="Prod" fill="#01203a" />
+              <Bar dataKey="Cons" fill="#e89c35" />
+            </BarChart>
+
+            <BarChart
+              className="mobileBar"
+              width={430}
+              height={250}
+              data={data}
+              margin={{
+                top: 20, right: 20, left: 20, bottom: 0,
+              }}
+            >
+              
+              <Tooltip />
+              <Legend width={140} wrapperStyle={{ top: 20, right: 5,  lineHeight: '20px' }} />
+              <XAxis dataKey="name" />
+              <Bar dataKey="Prod" fill="#01203a" />
+              <Bar dataKey="Cons" fill="#e89c35" />
             </BarChart>
           </div>
 
@@ -92,15 +107,30 @@ export default class MyChart extends PureComponent {
             className="aBar"
               width={500}
               height={300}
-              data={data}
+              data={data1}
               margin={{
                 top: 5, right: 20, left: 20, bottom: 0,
               }}
             >
-             
+              <XAxis dataKey="name" />
               <Tooltip />
-              <Legend width={100} wrapperStyle={{ top: 30, right: 0,  lineHeight: '40px' }} />
-              <Bar dataKey="pv" fill="#e89c35" barSize={35}/>
+              <Legend width={100} wrapperStyle={{ top: 20, right: 5,  lineHeight: '20px' }} />
+              <Bar dataKey="Savings" fill="#e89c35" barSize={35}/>
+            </BarChart>
+
+            <BarChart
+            className="mobileBar"
+              width={430}
+              height={250}
+              data={data1}
+              margin={{
+                top: 5, right: 20, left: 20, bottom: 0,
+              }}
+            >
+             <XAxis dataKey="name" />
+              <Tooltip />
+              <Legend width={100} wrapperStyle={{ top: 20, right: 5,  lineHeight: '20px' }} />
+              <Bar dataKey="Savings" fill="#e89c35" barSize={35}/>
             </BarChart>
           </div>
         </div>

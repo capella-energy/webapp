@@ -8,6 +8,10 @@ body {
   outline: none;
 }
 
+.mobileBar {
+  display: none;
+}
+
 .dashPage {
   background-color: #f7f8fc;
   width: 100vw;
@@ -33,9 +37,20 @@ body {
   margin-left: 25px;
 }
 
-@media screen and (max-width: 480px) {
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .webapp-content,
+  .section-titles {
+    margin-left: 0px;
+  }
+
   .graphs {
-    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 
@@ -44,11 +59,24 @@ body {
   .section-titles {
     margin-left: 0px;
   }
+
+  .graphs {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-  .webapp-content,
-  .section-titles {
-    margin-left: 0px;
+@media screen and (max-width: 480px) {
+  .graphs {
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+
+  .mobileBar {
+    display: inherit;
+  }
+
+  .aBar {
+    display: none;
   }
 }
