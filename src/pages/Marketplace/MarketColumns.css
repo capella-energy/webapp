@@ -8,6 +8,7 @@
   background-color: white;
   border-radius: 9px !important;
   padding-bottom: 3px !important;
+  padding-top: 0.75rem !important;
 }
 
 .cardDetails {
@@ -29,6 +30,10 @@
 
 .card-columns {
   margin-right: 1rem;
+}
+
+.card-text {
+  margin-bottom: 0.75rem;
 }
 
 .cardTitle {
