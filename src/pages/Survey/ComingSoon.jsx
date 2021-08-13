@@ -4,6 +4,8 @@ import firebase from "firebase";
 import "firebase/auth";
 import "./Survey.css"
 import "../Login/login.css"
+import * as FaIcons from "react-icons/fa";
+
 
 const db = firebase.firestore();
 
@@ -14,8 +16,8 @@ const ComingSoon = () => {
     <>
       <Card >
         <Card.Body>
-         
-          <h4 data-aos="fade-up" data-aos-duration="800"  className="text-center mb-4">Thank you so much for signing up! We are diligently developing myCapella and it will soon be available. Please check back in at a later time.</h4>
+        
+          <h4 data-aos="fade-in" data-aos-duration="800"  className="text-center mb-4">Thank you so much for signing up! <br></br>my<strong>Capella</strong> will soon be available.  <br></br> Please check back in at a later time. <br></br><br></br><FaIcons.FaBolt /></h4>
           
         </Card.Body>
       </Card>

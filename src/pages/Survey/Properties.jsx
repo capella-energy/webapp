@@ -10,7 +10,8 @@ import progressIMG from "../../assets/img/progress.svg"
 const db = firebase.firestore();
 
 const Properties = () => {
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
   const history = useHistory();
   const [loader, setLoader] = useState(false);  
@@ -22,7 +23,8 @@ const Properties = () => {
     db.collection("Users")
       .doc(id)
       .set({
-        name: name,
+        firstName: firstName,
+        lastName: lastName,
         uid: id
       })
       .then(() => {
@@ -34,21 +36,30 @@ const Properties = () => {
         setLoader(false);
       });
 
-    setName("");
+    setFirstName("");
+    setLastName("");
   };
 
   return (
     <>
       <Card >
         <Card.Body>
-          <img data-aos="fade-up" data-aos-duration="500"  id="progressIMG"src={progressIMG} alt=""/>
+          {/* <img data-aos="fade-up" data-aos-duration="500"  id="progressIMG"src={progressIMG} alt=""/> */}
           <h2 data-aos="fade-up" data-aos-duration="800"  className="text-center mb-4">Let's Get to Know You Better</h2>
           <Form onSubmit={handleSubmit}>
             <Form.Group data-aos="fade-up" data-aos-duration="700" id="name">
               <Form.Control
-                placeholder="Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                placeholder="First Name"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                required
+              />
+            </Form.Group>
+            <Form.Group data-aos="fade-up" data-aos-duration="700" id="name">
+              <Form.Control
+                placeholder="Last Name"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
                 required
               />
             </Form.Group>

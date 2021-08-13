@@ -7,7 +7,7 @@
 .marketCardBody {
   background-color: white;
   border-radius: 9px !important;
-  padding-bottom: 0 !important;
+  padding-bottom: 3px !important;
 }
 
 .cardDetails {
@@ -37,21 +37,23 @@
 }
 
 .marketCardBody Button {
-  padding: 10px 15px 10px 15px !important;
-  float: right;
+  padding: 0 !important;
+
   margin-bottom: 15px;
   font-size: smaller;
-  transform: translateY(-5px);
+
   outline: none;
-  color: white;
-  background: #01203a !important;
+
+  color: #e89c35;
+
+  background: transparent !important;
+  font-weight: 700;
 }
 
 .marketCardBody Button:hover,
 button:focus {
-  background: #01203ace !important;
-  color: white;
-  outline: none;
+  font-weight: 700;
+  color: #e89c35;
 }
 
 *:focus {

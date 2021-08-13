@@ -49,7 +49,7 @@ const Number = () => {
     <>
       <Card >
         <Card.Body>
-          <img data-aos="fade-right" data-aos-duration="500"  id="progressIMG"src={progressIMG} alt=""/>
+          {/* <img data-aos="fade-right" data-aos-duration="500"  id="progressIMG"src={progressIMG} alt=""/> */}
           <h2 data-aos="fade-right" data-aos-duration="700" className="text-center mb-4">Contact Info</h2>
           <Form onSubmit={handleSubmit}>
             <Form.Group data-aos="fade-right" data-aos-duration="900" id="name">
