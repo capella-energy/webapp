@@ -1,14 +1,19 @@
 .card-footer {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
+  padding-top: 8px !important;
+  padding-bottom: 1px !important;
   background-color: white !important;
+  transform: translateX(-2px);
 }
 
 .marketCardBody {
   background-color: white;
   border-radius: 9px !important;
-  padding-bottom: 3px !important;
+  padding-bottom: 1.25rem !important;
   padding-top: 0.75rem !important;
+}
+
+.cardLink:hover {
+  text-decoration: none;
 }
 
 .cardDetails {
@@ -16,7 +21,7 @@
 }
 
 .marketCard {
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
   margin-bottom: 15px !important;
   border-radius: 9px !important;
   overflow: hidden;
@@ -41,29 +46,6 @@
   font-weight: 700 !important;
 }
 
-.marketCardBody Button {
-  padding: 0 !important;
-
-  margin-bottom: 15px;
-  font-size: smaller;
-
-  outline: none;
-
-  color: #e89c35;
-
-  background: transparent !important;
-  font-weight: 700;
-}
-
-.marketCardBody Button:hover,
-button:focus {
-  font-weight: 700;
-  color: #e89c35;
-}
-
-*:focus {
-  outline: 0 !important;
-}
 @media screen and (max-width: 480px) {
   .card-columns {
     margin-right: 15px;

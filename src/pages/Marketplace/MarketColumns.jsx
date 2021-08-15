@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 import "./MarketColumns.css"
 import { Link } from "react-router-dom"; 
+import * as FaIcons from "react-icons/fa";
+
 
 import firebase from "firebase"; 
 const db = firebase.firestore();
@@ -41,10 +43,11 @@ class MarketColumns extends React.Component {
   render() {
     let displayProjects = this.state.projects.map((p) => (
       <div key={p.ID}>
+        <Link className="cardLink" to={`/marketplace/${p.projID}`}>
               <Card  className="marketCard">
                 <Card.Img src={p.ImageURL} variant="top" />
                 <Card.Footer>
-                  <small className="text-muted">{p.Location}</small>
+                  <small className="text-muted"><FaIcons.FaMapMarkerAlt/>  {p.Location}</small>
                 </Card.Footer>
                 <Card.Body className="marketCardBody">
                   <Card.Title className="cardTitle">{p.Name}</Card.Title>
@@ -61,10 +64,11 @@ class MarketColumns extends React.Component {
                   Utility: <span> </span>
                       {p.Utility}
                   </Card.Text>
-                  <Link to={`/marketplace/${p.projID}`}><button>Subscribe</button></Link>
+                  
                   </div>
                 </Card.Body>   
               </Card>
+              </Link>
      
       </div>))
   
