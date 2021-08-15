@@ -7,7 +7,7 @@ import Info from "./ProjectForm";
 
 const db = firebase.firestore();
 
-
+console.log("fuck");
 
 class ProjectDetails extends Component {
   
