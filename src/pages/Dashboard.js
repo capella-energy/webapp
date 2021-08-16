@@ -3,6 +3,7 @@ import Navbar from "./Navbar/Navbar";
 import firebase from "firebase";
 import "firebase/auth";
 import MyChart from "./Chart";
+import Shortcut from "./Shortcut"; 
 
 export default function Dashboard() {
   firebase.auth().onAuthStateChanged(function (user) {
@@ -27,6 +28,7 @@ export default function Dashboard() {
           Welcome, <span id="userNameField"></span>
         </h1>
         <MyChart />
+        <Shortcut />
       </div>
     </div>
   );
