@@ -64,6 +64,7 @@ export default class MyChart extends PureComponent {
       <>
         <div className="graphs">
           <div className="chartContainer">
+            <div className="innerChartContainer">
             <h6 className="chartTitle">Weekly Production & Consumption</h6>
             <BarChart
               className="aBar"
@@ -98,10 +99,12 @@ export default class MyChart extends PureComponent {
               <Bar dataKey="Prod" fill="#01203a" />
               <Bar dataKey="Cons" fill="#e89c35" />
             </BarChart>
+            </div>
           </div>
 
           {/* Right Side */}
           <div className="chartContainer">
+            <div className="innerChartContainer">
           <h6 className="chartTitle">Monthly Savings</h6>
             <BarChart
             className="aBar"
@@ -132,6 +135,7 @@ export default class MyChart extends PureComponent {
               <Legend width={100} wrapperStyle={{ top: 10, right: 5,  lineHeight: '20px' }} />
               <Bar dataKey="Savings" fill="#e89c35" barSize={35}/>
             </BarChart>
+            </div>
           </div>
         </div>
 

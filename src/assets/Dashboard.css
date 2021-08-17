@@ -30,6 +30,11 @@ body {
   border-radius: 9px;
   margin-right: 20px;
   margin-bottom: 20px;
+  min-width: 48%;
+
+  display: flex;
+  justify-content: space-around;
+  max-width: 585px !important;
 }
 
 .chartTitle {
@@ -49,8 +54,8 @@ body {
   }
 
   .graphs {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -61,8 +66,8 @@ body {
   }
 
   .graphs {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
