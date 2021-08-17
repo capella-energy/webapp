@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "../Navbar/Navbar";
 import firebase from "firebase";
 import "firebase/auth";
 import MyChart from "./Chart";
-import Shortcut from "./Shortcut"; 
+import Shortcut from "./Shortcut";
 
 export default function Dashboard() {
   firebase.auth().onAuthStateChanged(function (user) {
@@ -13,7 +13,7 @@ export default function Dashboard() {
       docRef.get().then(function (doc) {
         if (doc && doc.exists) {
           const myData = doc.data();
-          const userName = myData.name;
+          const userName = myData.firstName;
           document.getElementById("userNameField").innerHTML = userName;
         }
       });

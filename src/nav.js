@@ -12,10 +12,11 @@ import UpdateProfile from "./pages/Login/UpdateProfile";
 import Learn from "./pages/Learn/Learn";
 import Properties from "./pages/Survey/Properties";
 import Number from "./pages/Survey/Number";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard/Dashboard";
 import Completion from "./pages/Survey/Completion";
 import ProjectDetails from "./pages/Marketplace/ProjectDetails";
 import ComingSoon from "./pages/Survey/ComingSoon";
+import Billing from "./pages/Billing/Billing";
 
 function Nav() {
   return (
@@ -26,6 +27,7 @@ function Nav() {
           <PrivateRoute path="/learn" component={Learn} />
           <PrivateRoute path="/marketplace/:id" component={ProjectDetails} />
           <PrivateRoute path="/marketplace" component={Marketplace} />
+          <PrivateRoute path="/billing" component={Billing} />
 
           <Container className="login-container">
             <div className="inner-container">

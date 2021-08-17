@@ -23,6 +23,12 @@ export const SidebarData = [
         cName: "nav-text"
     },
     {
+        title: "Billing",
+        path: "/billing",
+        icon: <AiIcons.AiOutlineFileText />,
+        cName: "nav-text"
+    }, 
+    {
         title: "Profile",
         path: "/update-profile",
         icon: <BsIcons.BsPerson />,

@@ -31,14 +31,13 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
   min-width: 48%;
-
   display: flex;
   justify-content: space-around;
   max-width: 585px !important;
 }
 
 .chartTitle {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 20px;
 }
 

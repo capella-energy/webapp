@@ -3,7 +3,7 @@ import {
   LineChart, Line,
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
-import "../assets/Dashboard.css";
+import "./Dashboard.css";
 
 // https://recharts.org/en-US/guide/getting-started
 
@@ -68,11 +68,11 @@ export default class MyChart extends PureComponent {
             <h6 className="chartTitle">Weekly Production & Consumption</h6>
             <BarChart
               className="aBar"
-              width={500}
+              width={530}
               height={300}
               data={data}
               margin={{
-                top: 20, right: 20, left: 20, bottom: 0,
+                top: 20, right: 20, left: 20, bottom: 10,
               }}
             >
               
@@ -108,11 +108,11 @@ export default class MyChart extends PureComponent {
           <h6 className="chartTitle">Monthly Savings</h6>
             <BarChart
             className="aBar"
-              width={500}
+              width={530}
               height={300}
               data={data1}
               margin={{
-                top: 5, right: 20, left: 20, bottom: 0,
+                top: 10, right: 20, left: 20, bottom: 0,
               }}
             >
               <XAxis dataKey="name" />
