@@ -16,7 +16,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Completion from "./pages/Survey/Completion";
 import ProjectDetails from "./pages/Marketplace/ProjectDetails";
 import ComingSoon from "./pages/Survey/ComingSoon";
-import Billing from "./pages/Billing/Billing";
+import BillingHome from "./pages/Billing/BillingHome"; 
 
 function Nav() {
   return (
@@ -27,7 +27,7 @@ function Nav() {
           <PrivateRoute path="/learn" component={Learn} />
           <PrivateRoute path="/marketplace/:id" component={ProjectDetails} />
           <PrivateRoute path="/marketplace" component={Marketplace} />
-          <PrivateRoute path="/billing" component={Billing} />
+          <PrivateRoute path="/billing" component={BillingHome} /> 
 
           <Container className="login-container">
             <div className="inner-container">

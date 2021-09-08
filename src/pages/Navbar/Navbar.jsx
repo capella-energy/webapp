@@ -5,8 +5,6 @@ import * as AiIcons from "react-icons/ai";
 import { SidebarData } from './SidebarData';
 import "./Navbar.css";
 
-
-
 function Navbar() {
   const [sidebar, setSidebar] = useState(false); 
 
@@ -70,4 +68,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar; 

@@ -1,0 +1,13 @@
+.billingContainer {
+    margin-left: 250px; 
+} 
+
+.stripeButton {
+    border-radius: 30px !important; 
+  border: 0 !important;
+  color: white !important;
+  font-family: "Montserrat" !important;
+  font-size: 0.8571em;
+  font-weight: 400 !important;
+}
+
