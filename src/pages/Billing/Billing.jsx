@@ -1,15 +1,39 @@
-import React from "react"; 
+import React, { useState, useEffect } from "react"; 
 import ReactDOM from "react-dom"; 
 import StripeCheckout from "react-stripe-checkout"; 
 import axios from "axios"; 
 import {toast} from "react-toastify";  
 import "./Billing.css"; 
+import firebase from "firebase";
+import "firebase/auth";
 
 export default function Billing() {
-    const [product] = React.useState({ 
-      price: 112.69,
-      description: "Cool car"
-    });
+    const [product, setProduct] = useState("");
+
+    useEffect(() => {
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          var db = firebase.firestore();
+          var docRef = db.collection("Users").doc(user.uid);
+          docRef.get().then(function (doc) {
+          
+              const myData = doc.data();
+              const billingPrice = myData.billingPrice;
+              console.log(billingPrice)
+              setProduct({ 
+                price: billingPrice,
+                description: "Cooll car"
+              });
+          });
+        }
+      });
+    }, []);
+
+
+    // const [product] = React.useState({ 
+    //   price: 112.69,
+    //   description: "Cool car"
+    // });
   
     async function handleToken(token, addresses) {
       const response = await axios.post(
@@ -44,5 +68,3 @@ export default function Billing() {
     );
   }
   
-  const rootElement = document.getElementById("root");
-  ReactDOM.render(<Billing />, rootElement); 
